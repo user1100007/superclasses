@@ -1,0 +1,10607 @@
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initia-scale=0.8"><title>ប្រព័ន្ធគ្រប់គ្រងវត្តមានបុគ្គលិក</title><script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.9vdPKhB0RUg.O/m=gapi_iframes/rt=j/sv=1/d=1/ed=1/rs=AHpOoo97anj7zZ432JcN58tqJJp_A6WeOw/cb=gapi.loaded_0?le=scs,fedcm_migration_mod" async=""></script><script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.ch0Jz-JlMrQ.O/m=gapi_iframes/rt=j/sv=1/d=1/ed=1/rs=AHpOoo_YD4KoV8fTh_kLhktsiThAm3yJ5A/cb=gapi.loaded_0?le=scs,fedcm_migration_mod" async=""></script><script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.9vdPKhB0RUg.O/m=gapi_iframes/rt=j/sv=1/d=1/ed=1/rs=AHpOoo97anj7zZ432JcN58tqJJp_A6WeOw/cb=gapi.loaded_0?le=scs" async=""></script><script src="https://cdn.tailwindcss.com"></script><script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script><style>*{box-sizing:border-box}body{font-family:"Noto Sans Khmer",sans-serif;margin:0;padding:0;background:#0b1220;color:#e5eefc}@media print{@page{size:A4 landscape;margin:4mm 4mm}body,html{background:#fff!important;color:#000!important;margin:0!important;padding:0!important;font-size:14pt!important}#loading-overlay,#login-page,.no-print,.tab-bar-row,.top-bar-row,footer{display:none!important}#dashboard-page{background:#fff!important;min-height:unset!important}#dashboard-content{background:#fff!important;padding:0!important}#att-print-wrapper{background:#fff!important;color:#000!important;padding:0!important;border-radius:0!important}#att-print-wrapper .print-header-center{text-align:center;font-size:18pt!important;font-weight:700!important;line-height:1.3!important;color:#000!important}#att-print-wrapper .print-header-left{font-size:16pt!important;font-weight:600!important;line-height:1!important;color:#000!important}#att-date-heading{font-size:18pt!important;font-weight:800!important;color:#000!important;text-align:center!important;margin:3pt 0 2pt 0!important}#att-full-solar-title{font-size:16pt!important;color:#000!important}table{width:100%!important;border-collapse:collapse!important;font-size:16pt!important;table-layout:fixed!important;page-break-inside:auto!important}thead{display:table-header-group!important}tr{page-break-inside:avoid!important}th{background:#1d4ed8!important;color:#fff!important;border:1pt solid #000!important;padding:5pt 3pt!important;font-size:16pt!important;font-weight:700!important;text-align:center!important;vertical-align:middle!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}td{border:1pt solid #000!important;padding:1pt 3pt!important;font-size:16pt!important;color:#000!important;vertical-align:middle!important;word-wrap:break-word!important;line-height:1.15!important}.att-sig-placeholder{display:none!important}.att-sig-container:not(.locked){background:0 0!important;border:none!important}tbody tr.signed-first-row{display:none!important}.att-sig-container{border:none!important;background:0 0!important;padding:1pt!important;box-shadow:none!important;min-height:40pt!important}.att-sig-time{font-size:10pt!important;color:#000!important;text-align:center!important}.att-sig-img{display:block!important;max-height:40pt!important;width:auto!important;margin:0 auto!important;object-fit:contain!important}.print-footer-signature{display:block!important;margin-top:15px}.att-footer-grid{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;gap:4pt!important;margin-top:3pt!important;padding-top:3pt!important;border-top:1pt solid #000!important;font-size:11pt!important;color:#000!important;align-items:start!important}.att-footer-grid *{color:#000!important}tbody tr:nth-child(even) td{background:#f5f7fa!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}#att-principal-sig{display:block!important;max-height:28pt!important;margin:0 auto!important;object-fit:contain!important}#att-tbody tr{counter-increment:att-row}#att-tbody tr td:first-child{font-weight:700!important}#att-tbody tr td:first-child::before{content:counter(att-row)}#att-tbody tr td:first-child{font-size:0!important}#att-tbody tr td:first-child::before{font-size:16pt!important}}.print-footer-signature{display:none}.card{background:#102544;border:1px solid #1e3a6d;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.18)}.tab-active{border-bottom:3px solid #f59e0b!important;color:#f59e0b!important}.tag{background:#1d4ed8;color:#fff;border:1px solid #3b82f6;border-radius:999px;padding:2px 10px;font-size:10px;font-weight:800}.tag-green{background:#059669;border:1px solid #10b981}.tag-orange{background:#d97706;border:1px solid #f59e0b}#loading-overlay{position:fixed;inset:0;background:rgba(3,7,18,.92);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}.spinner{width:40px;height:40px;border:3px solid #1e3a6d;border-top-color:#f59e0b;border-radius:50%;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.fb-dot{width:8px;height:8px;border-radius:50%;display:inline-block}.fb-live{background:#22c55e;animation:pulse 2s infinite}.fb-off{background:#ef4444}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}.att-sig-container{cursor:pointer;background:#fff7ed;border:1px solid #f59e0b;padding:4px;min-height:48px;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:6px;transition:all .2s;position:relative}.att-sig-container:hover{background:#ffedd5}.att-sig-img{max-height:28px;object-fit:contain;display:none}.att-sig-placeholder{color:#9a3412;font-size:10px;font-weight:700;text-align:center;line-height:1.3}.att-sig-time{font-size:10px;font-weight:800;color:#7c2d12}.att-sig-container.locked{cursor:not-allowed;background:#f0fdf4;border:1px solid #16a34a}.att-sig-container.locked .att-sig-placeholder{color:#15803d}.att-sig-container.open-now{background:#dcfce7;border:1px solid #16a34a;animation:pulse-green 2s infinite}.att-sig-container.open-now .att-sig-placeholder{color:#15803d}@keyframes pulse-green{0%,100%{box-shadow:0 0 0 0 rgba(22,163,74,.28)}50%{box-shadow:0 0 0 4px rgba(22,163,74,.1)}}.att-sig-container.gps-blocked{cursor:not-allowed;background:#fef2f2;border:1px solid #ef4444}.att-sig-container.gps-blocked .att-sig-placeholder{color:#b91c1c}.att-sig-container.gps-loading{cursor:wait;background:#fefce8;border:1px solid #ca8a04}.att-sig-container.gps-loading .att-sig-placeholder{color:#92400e}#gps-banner{display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:8px;font-size:12px;font-weight:700;margin-bottom:8px;transition:all .4s}.gps-ok{background:#dcfce7;color:#15803d;border:1px solid #86efac}.gps-bad{background:#fee2e2;color:#b91c1c;border:1px solid #fca5a5}.gps-loading-banner{background:#fefce8;color:#92400e;border:1px solid #fde68a}.gps-denied{background:#fdf4ff;color:#7e22ce;border:1px solid #d8b4fe}.gps-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}.gps-dot.ok{background:#22c55e;animation:pulse 1.5s infinite}.gps-dot.bad{background:#ef4444}.gps-dot.loading{background:#f59e0b;animation:pulse 1s infinite}.gps-dot.denied{background:#a855f7}#gps-error-toast{position:fixed;top:60px;left:50%;transform:translateX(-50%);background:#ef4444;color:#fff;padding:10px 20px;border-radius:10px;font-size:13px;font-weight:700;z-index:9999;display:none;box-shadow:0 8px 24px rgba(0,0,0,.35);text-align:center;max-width:90vw}.att-time-badge{display:inline-block;font-size:9px;padding:1px 5px;border-radius:3px;margin-left:4px;font-weight:700}.att-time-badge.open{background:#dcfce7;color:#15803d}.att-time-badge.closed{background:#fee2e2;color:#b91c1c}input.att-note{width:95%;padding:3px;border:1px solid #cbd5e1;border-radius:4px;background:#fff;text-align:left;font-size:11px;color:#0f172a}*,::after,::before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mb-4{margin-bottom:1rem}.mb-7{margin-bottom:1.75rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.min-h-screen{min-height:100vh}.w-full{width:100%}.max-w-md{max-width:28rem}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.items-center{align-items:center}.justify-center{justify-content:center}.gap-1\\.5{gap:.375rem}.gap-2{gap:.5rem}.overflow-x-auto{overflow-x:auto}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity,1))}.border-transparent{border-color:transparent}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity,1))}.bg-transparent{background-color:transparent}.p-0{padding:0}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-3\\.5{padding-left:.875rem;padding-right:.875rem}.py-2\\.5{padding-top:.625rem;padding-bottom:.625rem}.text-center{text-align:center}.text-xs{font-size:.75rem;line-height:1rem}.font-semibold{font-weight:600}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity,1))}.hover\\:text-yellow-400:hover{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity,1))}</style><style>*,::after,::before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mb-7{margin-bottom:1.75rem}.flex{display:flex}.hidden{display:none}.min-h-screen{min-height:100vh}.w-full{width:100%}.max-w-md{max-width:28rem}.items-center{align-items:center}.justify-center{justify-content:center}.gap-1\\.5{gap:.375rem}.gap-2{gap:.5rem}.overflow-x-auto{overflow-x:auto}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity,1))}.border-transparent{border-color:transparent}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity,1))}.bg-transparent{background-color:transparent}.p-0{padding:0}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-3\\.5{padding-left:.875rem;padding-right:.875rem}.py-2\\.5{padding-top:.625rem;padding-bottom:.625rem}.text-center{text-align:center}.text-xs{font-size:.75rem;line-height:1rem}.font-semibold{font-weight:600}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity,1))}.hover\\:text-yellow-400:hover{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity,1))}</style><style>*,::after,::before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mb-7{margin-bottom:1.75rem}.flex{display:flex}.hidden{display:none}.min-h-screen{min-height:100vh}.w-full{width:100%}.max-w-md{max-width:28rem}.items-center{align-items:center}.justify-center{justify-content:center}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.overflow-x-auto{overflow-x:auto}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity,1))}.border-transparent{border-color:transparent}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity,1))}.bg-transparent{background-color:transparent}.p-0{padding:0}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.text-center{text-align:center}.text-xs{font-size:.75rem;line-height:1rem}.font-semibold{font-weight:600}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity,1))}.hover\:text-yellow-400:hover{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity,1))}</style><style>*,::after,::before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mb-7{margin-bottom:1.75rem}.flex{display:flex}.hidden{display:none}.min-h-screen{min-height:100vh}.w-full{width:100%}.max-w-md{max-width:28rem}.items-center{align-items:center}.justify-center{justify-content:center}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.overflow-x-auto{overflow-x:auto}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity,1))}.border-transparent{border-color:transparent}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity,1))}.bg-transparent{background-color:transparent}.p-0{padding:0}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.text-center{text-align:center}.text-xs{font-size:.75rem;line-height:1rem}.font-semibold{font-weight:600}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity,1))}.hover\:text-yellow-400:hover{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity,1))}</style><script src="https://apis.google.com/js/api.js?onload=__iframefcb501435" type="text/javascript" charset="UTF-8" gapi_processed="true"></script><style>*,::after,::before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mb-7{margin-bottom:1.75rem}.flex{display:flex}.hidden{display:none}.min-h-screen{min-height:100vh}.w-full{width:100%}.max-w-md{max-width:28rem}.items-center{align-items:center}.justify-center{justify-content:center}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.overflow-x-auto{overflow-x:auto}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity,1))}.border-transparent{border-color:transparent}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity,1))}.bg-transparent{background-color:transparent}.p-0{padding:0}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.text-center{text-align:center}.text-xs{font-size:.75rem;line-height:1rem}.font-semibold{font-weight:600}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity,1))}.hover\:text-yellow-400:hover{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity,1))}</style><style>*,::after,::before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mb-7{margin-bottom:1.75rem}.flex{display:flex}.hidden{display:none}.min-h-screen{min-height:100vh}.w-full{width:100%}.max-w-md{max-width:28rem}.items-center{align-items:center}.justify-center{justify-content:center}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.overflow-x-auto{overflow-x:auto}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity,1))}.border-transparent{border-color:transparent}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23 / var(--tw-bg-opacity,1))}.bg-transparent{background-color:transparent}.p-0{padding:0}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-3\.5{padding-left:.875rem;padding-right:.875rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.text-center{text-align:center}.text-xs{font-size:.75rem;line-height:1rem}.font-semibold{font-weight:600}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity,1))}.hover\:text-yellow-400:hover{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity,1))}</style><style>*,::after,::before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mb-7{margin-bottom:1.75rem}.flex{display:flex}.hidden{display:none}.min-h-screen{min-height:100vh}.w-full{width:100%}.max-w-md{max-width:28rem}.items-center{align-items:center}.justify-center{justify-content:center}.gap-2{gap:.5rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.text-center{text-align:center}</style><style>*,::after,::before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mb-7{margin-bottom:1.75rem}.flex{display:flex}.hidden{display:none}.min-h-screen{min-height:100vh}.w-full{width:100%}.max-w-md{max-width:28rem}.items-center{align-items:center}.justify-center{justify-content:center}.gap-2{gap:.5rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.text-center{text-align:center}</style><style>*,::after,::before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-scroll-snap-strictness:proximity;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000}*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mb-7{margin-bottom:1.75rem}.flex{display:flex}.hidden{display:none}.min-h-screen{min-height:100vh}.w-full{width:100%}.max-w-md{max-width:28rem}.items-center{align-items:center}.justify-center{justify-content:center}.gap-2{gap:.5rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.text-center{text-align:center}</style></head><body><div id="gps-error-toast"></div><div id="loading-overlay" style="display:none"><div class="spinner"></div><div style="font-size:12px;color:#94a3b8">កំពុងភ្ជាប់ Firebase…</div></div><div id="login-page" class="min-h-screen flex items-center justify-center"><div class="w-full max-w-md p-5"><div class="text-center mb-7"><div style="width:64px;height:64px;border-radius:16px;margin:0 auto 12px;background:linear-gradient(
+
+
+
+
+
+								135deg,
+
+
+
+
+
+								#1d4ed8,
+
+
+
+
+
+								#172554
+
+
+
+
+
+							);border:2px solid #60a5fa;display:flex;align-items:center;justify-content:center;font-size:32px">⏰</div><div style="font-size:14px;font-weight:700;color:#fff">ប្រព័ន្ធគ្រប់គ្រងវត្តមានបុគ្គលិកអប់រំ</div><div style="font-size:11px;color:#94a3b8;margin-top:4px">សាលាបឋមសិក្សា រោគ</div></div><div class="card p-6"><div style="font-size:13px;font-weight:700;margin-bottom:14px;color:#fff">🔐 ចូលប្រព័ន្ធតាមរយៈលេខទូរសព្ទ (SMS OTP)</div><div id="phone-auth-section" style="margin-bottom:14px"><div style="font-size:11px;color:#94a3b8;margin-bottom:4px">📱 លេខទូរសព្ទ (ឧទាហរណ៍៖ +85512345678)</div><div class="flex gap-2"><input id="auth-phone-number" type="tel" value="+855" placeholder="+85512345678" style="flex:1;background:#0f172a;border:1px solid #475569;border-radius:8px;padding:8px 14px;font-size:13px;color:#fff;outline:0"><button id="send-otp-btn" style="background:#1d4ed8;color:#fff;padding:8px 14px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer">ផ្ញើ OTP</button></div></div><div id="otp-auth-section" class="hidden" style="margin-bottom:14px"><div style="font-size:11px;color:#94a3b8;margin-bottom:4px">🔑 លេខកូដ OTP ៦ខ្ទង់</div><input id="auth-otp-code" type="text" placeholder="បញ្ចូលលេខកូដពី SMS" style="width:100%;background:#0f172a;border:1px solid #475569;border-radius:8px;padding:8px 14px;font-size:13px;color:#fff;outline:0;margin-bottom:10px"><button id="verify-otp-btn" style="width:100%;background:#16a34a;color:#fff;padding:10px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer">ផ្ទៀងផ្ទាត់ ន ិងចូលប្រើ</button></div><div id="recaptcha-container"></div><div id="error-message" class="hidden" style="background:rgba(127,29,29,.2);border:1px solid rgba(239,68,68,.4);border-radius:8px;padding:8px 12px;font-size:12px;color:#fca5a5;margin-bottom:10px">លេខកូដមិនត្រឹមត្រូវទេ</div></div></div></div><div id="dashboard-page" class="hidden min-h-screen"><div class="top-bar-row no-print" style="background:#0f172a;border-bottom:1px solid #1e293b;padding:10px 14px;display:flex;align-items:center;justify-content:space-between"><div><div style="font-size:13px;font-weight:700;color:#fff">🏘️·</div><div style="font-size:11px;color:#94a3b8">គ្រប់គ្រងតាម digital</div></div><div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><div id="fb-status" style="display:flex;align-items:center;gap:6px;background:#1e293b;border-radius:6px;padding:4px 8px;border:1px solid #334155"><span class="fb-dot fb-live" id="fb-dot"></span><span style="font-size:11px;color:#94a3b8" id="fb-label">Live</span></div><div style="text-align:right"><div id="user-name" style="font-size:11px;font-weight:700;color:#fbbf24"></div><div id="user-role-tag" class="tag">role</div></div><button onclick="setActiveTab(&quot;report&quot;)" style="background:rgba(29,78,216,.2);border:1px solid rgba(59,130,246,.4);color:#93c5fd;border-radius:6px;padding:5px 10px;font-size:11px;font-weight:700;cursor:pointer">📊 របាយការណ៍</button><button id="logout-btn" style="background:rgba(220,38,38,.2);border:1px solid rgba(239,68,68,.4);color:#fca5a5;border-radius:6px;padding:5px 10px;font-size:11px;font-weight:700;cursor:pointer">ចេញ</button></div></div><div id="dashboard-content" class="p-4"></div></div><template id="tpl-report"><meta charset="utf-8"><script src="https://cdn.tailwindcss.com"></script><script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-database-compat.js"></script><style>*{box-sizing:border-box}body{font-family:"Noto Sans Khmer",sans-serif;margin:0;padding:16px;background:#0b1220;color:#e5eefc}.card{background:#102544;border:1px solid #1e3a6d;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.18)}table{border-collapse:collapse}td,th{border:1px solid #334155}.rpt-table th{background:#1d4ed8;color:#fff;font-size:11px;padding:4px 3px;text-align:center;white-space:nowrap}.rpt-table td{font-size:11px;padding:3px;text-align:center;color:#e5eefc;white-space:nowrap}.rpt-table tbody tr:nth-child(even) td{background:#0f1e38}.rpt-table td.name-cell{text-align:left;font-weight:700;white-space:nowrap}.code-present{color:#10b981;font-weight:800}.code-leave{color:#f59e0b;font-weight:800}.code-noleave{color:#ef4444;font-weight:800}.code-other{color:#38bdf8;font-weight:800}.code-off{color:#475569}.day-off-col{background:#1e293b!important;color:#64748b!important}.scrollbox{overflow-x:auto;max-width:100%}.btn{background:#1d4ed8;color:#fff;border:none;padding:8px 16px;border-radius:6px;font-weight:800;cursor:pointer;font-size:12px}.btn:hover{background:#2563eb}.btn-outline{background:0 0;border:1px solid #475569;color:#e5eefc;padding:8px 16px;border-radius:6px;font-weight:700;cursor:pointer;font-size:12px}select{background:#0f172a;border:1px solid #475569;color:#fff;padding:6px 10px;border-radius:6px;font-size:12px}.legend span{display:inline-flex;align-items:center;gap:4px;margin-right:14px;font-size:11px;color:#94a3b8}@media print{body{background:#fff!important;color:#000!important;padding:0!important}#rpt-controls,.no-print{display:none!important}.card{box-shadow:none!important;border:none!important;background:#fff!important}#rpt-detail-wrap,#rpt-summary-wrap{display:none!important}#rpt-detail-wrap.print-active,#rpt-summary-wrap.print-active{display:block!important}table{width:100%!important}th{background:#1d4ed8!important;color:#fff!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}tbody tr:nth-child(even) td{background:#f5f7fa!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}td,th{color:#000!important;border:1pt solid #000!important}.code-leave,.code-noleave,.code-other,.code-present{color:#000!important}@page{size:A4 landscape;margin:6mm}}</style><div id="rpt-controls" class="card no-print" style="padding:16px;margin-bottom:16px;display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap"><div><div style="font-size:11px;color:#94a3b8;margin-bottom:4px">ជ្រើសខែ</div><select id="rpt-month"></select></div><div><div style="font-size:11px;color:#94a3b8;margin-bottom:4px">ជ្រើសឆ្នាំ</div><select id="rpt-year"></select></div><button class="btn" onclick="rptGenerate()">📊 បង្កើតរបាយការណ៍</button><button class="btn-outline" onclick="rptPrint(&quot;detail&quot;)">🖨️ ព្រីនតារាងលម្អិត</button><button class="btn-outline" onclick="rptPrint(&quot;summary&quot;)">🖨️ ព្រីនតារាងសរុប</button><div id="rpt-status" style="font-size:11px;color:#fbbf24"></div></div><div class="legend no-print" style="margin-bottom:10px"><span><b class="code-present">✓</b>មកធ្វើការ</span><span><b class="code-leave">ច</b>= មានច្បាប់</span><span><b class="code-noleave">អ</b>= អត់ច្បាប់</span><span><b class="code-other">ផ</b>= ផ្សេងៗ (បេសកកម្ម ។ល។)</span><span><b class="code-off">–</b>= ថ្ងៃឈប់សម្រាក/គ្មានទិន្នន័យ</span><span style="color:#94a3b8">ជួរប្រផេះ = ថ្ងៃអាទិត្យ ឬ ថ្ងៃព្រហស្បតិ៍ដងទី៤ (ថ្ងៃឈប់)</span></div><div id="rpt-detail-wrap" class="card" style="padding:16px;margin-bottom:20px"><div class="print-header" style="text-align:center;margin-bottom:8px"><div style="font-size:14px;font-weight:700;line-height:1.5">ព្រះរាជាណាចក្រកម្ពុជា<br>ជាតិ សាសនា ព្រះមហាក្សត្រ<br>--------*--------</div><div style="text-align:left;font-size:12px;font-weight:600;margin:4px 0">រដ្ឋបាលស្រុកភ្នំស្រុក<br>ការិយាល័យអប់រំ យុវជន និងកីឡាស្រុក<br>សាលាបឋមសិក្សា រោគ</div><div style="font-size:15px;font-weight:800;color:#fbbf24;margin-top:6px" id="rpt-detail-title">របាយការណ៍វត្តមានប្រចាំខែ</div></div><div class="scrollbox"><table class="rpt-table" id="rpt-detail-table" style="width:100%"></table></div><div style="text-align:center;font-weight:800;font-size:12px;margin-top:14px" id="rpt-detail-grandtotal"></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:8px;padding-top:10px;border-top:1pt solid #334155;font-size:11px"><div></div><div></div><div style="text-align:center"><p style="margin:2px 0 0 0" id="rpt-summary-lunardate"></p><p style="margin:0" id="rpt-summary-solardate"></p><p style="font-weight:700;font-size:12px;margin:20px 0 2px 0">នាយិកា</p><p style="font-weight:700;font-size:12px;margin:0" id="rpt-detail-director"></p></div></div></div><div id="rpt-summary-wrap" class="card" style="padding:16px"><div class="print-header" style="text-align:center;margin-bottom:8px"><div style="font-size:14px;font-weight:700;line-height:1.5">ព្រះរាជាណាចក្រកម្ពុជា<br>ជាតិ សាសនា ព្រះមហាក្សត្រ<br>--------*--------</div><div style="text-align:left;font-size:12px;font-weight:600;margin:4px 0">រដ្ឋបាលស្រុកភ្នំស្រុក<br>ការិយាល័យអប់រំ យុវជន និងកីឡាស្រុក<br>សាលាបឋមសិក្សា រោគ</div><div style="font-size:15px;font-weight:800;color:#fbbf24;margin-top:6px" id="rpt-summary-title">តារាងសរុបវត្តមានប្រចាំខែ</div></div><div class="scrollbox"><table class="rpt-table" id="rpt-summary-table" style="width:100%"></table></div><div style="text-align:center;font-weight:800;font-size:12px;margin-top:14px" id="rpt-summary-grandtotal"></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:8px;padding-top:10px;border-top:1pt solid #334155;font-size:11px"><div></div><div></div><div style="text-align:center"><p style="margin:2px 0 0 0" id="rpt-detail-lunardate"></p><p style="margin:0" id="rpt-detail-solardate"></p><p style="font-weight:700;font-size:12px;margin:20px 0 2px 0">នាយិកា</p><p style="font-weight:700;font-size:12px;margin:0" id="rpt-summary-director"></p></div></div></div><script>// ══════════════════════════════════════════════
+
+
+
+
+
+//  FIREBASE INIT (independent instance for this iframe)
+
+
+
+
+
+// ══════════════════════════════════════════════
+
+
+
+
+
+firebase.initializeApp({
+
+
+
+
+
+  apiKey: "AIzaSyB35WLr1y5_QT3j-0x7Mb2F7QaaYXLdIcQ",
+
+
+
+
+
+  authDomain: "packagedemo-b600c.firebaseapp.com",
+
+
+
+
+
+  databaseURL: "https://packagedemo-b600c-default-rtdb.asia-southeast1.firebasedatabase.app",
+
+
+
+
+
+  projectId: "packagedemo-b600c",
+
+
+
+
+
+  storageBucket: "packagedemo-b600c.firebasestorage.app",
+
+
+
+
+
+  messagingSenderId: "601958630212",
+
+
+
+
+
+  appId: "1:601958630212:web:e140ee683e203f3e464d11"
+
+
+
+
+
+});
+
+
+
+
+
+var rptDb = firebase.database();
+
+
+
+
+
+
+
+
+
+
+
+// ══════════════════════════════════════════════
+
+
+
+
+
+//  STAFF LIST — must mirror attStaff in the main app.
+
+
+
+
+
+//  "id" (អត្តលេខមន្ត្រី) is auto-generated (001, 002, ...) since
+
+
+
+
+
+//  the source staff list has no official ID field yet.
+
+
+
+
+
+//  Edit the "id" values below if your school already uses real staff codes.
+
+
+
+
+
+// ══════════════════════════════════════════════
+
+
+
+
+
+var rptStaff = [
+
+
+
+
+
+  {id:"2730200248", name:"សុខ សារើន",   gender:"ស្រី",  position:"នាយិកា"},
+
+
+
+
+
+  {id:"1720200457", name:"យ៉េន សារី",   gender:"ប្រុស", position:"នាយករង"},
+
+
+
+
+
+  {id:"1920100007", name:"អ៊ុន ប៊ុនទុង", gender:"ប្រុស", position:"លេខាធិការ"},
+
+
+
+
+
+  {id:"2900100038", name:"រ៉ែម សុភក្ដិ", gender:"ស្រី",  position:"ថ្នាក់ 1A"},
+
+
+
+
+
+  {id:"2000100008", name:"ស្វាង មនោរម្យ", gender:"ស្រី", position:"ថ្នាក់ 5A"},
+
+
+
+
+
+  {id:"2860100030", name:"ប៉ោង ស្រីពេជ្រ", gender:"ស្រី", position:"ថ្នាក់ 2A"},
+
+
+
+
+
+  {id:"2860100029", name:"លេង ចាន់លាវ", gender:"ស្រី",  position:"ថ្នាក់ 2B"},
+
+
+
+
+
+  {id:"2910100012", name:"អែង ផល្លែន", gender:"ស្រី",  position:"ថ្នាក់ 3B"},
+
+
+
+
+
+  {id:"2900100091", name:"ប៊ី ពិសី",    gender:"ស្រី",  position:"ថ្នាក់ 3A"},
+
+
+
+
+
+  {id:"2910100014", name:"អឿន សុខៀប",  gender:"ស្រី",  position:"ថ្នាក់ 4B"},
+
+
+
+
+
+  {id:"2900100021", name:"ឆេន សាវដា",  gender:"ស្រី",  position:"ថ្នាក់ 4A"},
+
+
+
+
+
+  {id:"1880100066", name:"រ៉ោម សម្ផស្ស", gender:"ប្រុស", position:"ថ្នាក់ 5B"},
+
+
+
+
+
+  {id:"2930100004", name:"ឈួត សេរ៉ូម", gender:"ស្រី",  position:"ថ្នាក់ 6A"},
+
+
+
+
+
+  {id:"1720200503", name:"កែវ ខន",      gender:"ប្រុស", position:"កសិកម្ម"},
+
+
+
+
+
+  {id:"2880100092", name:"លន់ ចាន់នឹក", gender:"ស្រី",  position:"បណ្ណារក្ស"},
+
+
+
+
+
+  {id:"2970100060", name:"ពាន ណូរ៉ា",   gender:"ស្រី",  position:"ថ្នាក់ ម.ត"},
+
+
+
+
+
+  {id:"2880100101", name:"ឡុក ម៉ាក់តី", gender:"ស្រី",  position:"ថ្នាក់ ម.ត"}
+
+
+
+
+
+];
+
+
+
+
+
+
+
+
+
+
+
+var KH_DIGITS = ["០","១","២","៣","៤","៥","៦","៧","៨","៩"];
+
+
+
+
+
+function toKh(n){ return String(n).split("").map(function(c){ return /[0-9]/.test(c) ? KH_DIGITS[c] : c; }).join(""); }
+
+
+
+
+
+
+
+
+
+
+
+var MONTH_NAMES = ['មករា','កុម្ភៈ','មីនា','មេសា','ឧសភា','មិថុនា','កក្កដា','សីហា','កញ្ញា','តុលា','វិច្ឆិកា','ធ្នូ'];
+
+
+
+
+
+// ══════════════════════════════════════════════
+
+
+//  KHMER SOLAR / LUNAR DATE HELPERS (for report footer)
+
+
+// ══════════════════════════════════════════════
+
+
+var KH_WEEKDAYS_LONG = ["ថ្ងៃអាទិត្យ","ថ្ងៃច័ន្ទ","ថ្ងៃអង្គារ","ថ្ងៃពុធ","ថ្ងៃព្រហស្បតិ៍","ថ្ងៃសុក្រ","ថ្ងៃសៅរ៍"];
+
+
+var KH_MONTHS_SOLAR = ["មករា","កុម្ភៈ","មីនា","មេសា","ឧសភា","មិថុនា","កក្កដា","សីហា","កញ្ញា","តុលា","វិច្ឆិកា","ធ្នូ"];
+
+
+var KH_MONTHS_LUNAR = {0:"មាឃ",1:"ផល្គុន",2:"ចេត្រ",3:"ពិសាខ",4:"ជេស្ឋ",5:"អាសាឍ",6:"ស្រាពណ៍",7:"ភទ្របទ",8:"អស្សុជ",9:"កត្តិក",10:"មិគសិរ",11:"បុស្ស"};
+
+
+var KH_ANIMALS = ["ជូត","ឆ្លូវ","ខាល","ថោះ","រោង","ម្សាញ់","មមី","មមែ","វក","រកា","ច","កុរ"];
+
+
+var KH_SAK = ["សំរឹទ្ធិស័ក","ឯកស័ក","ទោស័ក","ត្រីស័ក","ចត្វាស័ក","បញ្ចស័ក","ឆស័ក","សប្តស័ក","អដ្ឋស័ក","នព្វស័ក"];
+
+
+
+
+
+function rptSolarDateStr(d){
+
+
+  return "ថ្ងៃទី" + toKh(d.getDate()) + " ខែ" + KH_MONTHS_SOLAR[d.getMonth()] + " ឆ្នាំ" + toKh(d.getFullYear());
+
+
+}
+
+
+
+
+
+function rptLunarDateStr(d){
+
+
+  var base = new Date("2026-05-13"),
+
+
+      diff = Math.round((d - base) / 86400000);
+
+
+  var ld = (9 + diff) % 30 || 30;
+
+
+  if (ld <= 0) ld += 30;
+
+
+  var phase = ld <= 15 ? "កើត" : "រោច",
+
+
+      pn = ld <= 15 ? ld : (ld - 15 || 15);
+
+
+  var lm = KH_MONTHS_LUNAR[d.getMonth()];
+
+
+  var afterKhmerNewYear = d.getMonth() > 3 || (d.getMonth() === 3 && d.getDate() >= 14);
+
+
+  var cs = afterKhmerNewYear ? d.getFullYear() - 638 : d.getFullYear() - 639;
+
+
+  var be = cs + 1182;
+
+
+  var animalName = KH_ANIMALS[(((cs % 12) + 12) % 12 + 10) % 12];
+
+
+  var sakName = KH_SAK[((cs % 10) + 10) % 10];
+
+
+  return KH_WEEKDAYS_LONG[d.getDay()] + " " + toKh(pn) + phase + " ខែ" + lm + " ឆ្នាំ" + animalName + " " + sakName + " ព.ស " + toKh(be);
+
+
+}
+
+
+
+
+
+function renderReportFooter(totals){
+
+
+  var today = new Date();
+
+
+  var solarStr = rptSolarDateStr(today);
+
+
+  var lunarStr = rptLunarDateStr(today);
+
+
+
+
+
+  var solarEl1 = document.getElementById('rpt-detail-solardate');
+
+
+  var lunarEl1 = document.getElementById('rpt-detail-lunardate');
+
+
+  if (solarEl1) solarEl1.textContent = solarStr;
+
+
+  if (lunarEl1) lunarEl1.textContent = lunarStr;
+
+
+
+
+
+  var solarEl2 = document.getElementById('rpt-summary-solardate');
+
+
+  var lunarEl2 = document.getElementById('rpt-summary-lunardate');
+
+
+  if (solarEl2) solarEl2.textContent = solarStr;
+
+
+  if (lunarEl2) lunarEl2.textContent = lunarStr;
+
+
+
+
+
+  var director = rptStaff.filter(function(s){ return s.position === 'នាយិកា'; })[0];
+
+
+  var directorName = director ? director.name : '';
+
+
+  var dirEl1 = document.getElementById('rpt-detail-director');
+
+
+  var dirEl2 = document.getElementById('rpt-summary-director');
+
+
+  if (dirEl1) dirEl1.textContent = directorName;
+
+
+  if (dirEl2) dirEl2.textContent = directorName;
+
+
+
+
+
+  var grand = {workDays:0, present:0, leave:0, noleave:0, other:0};
+
+
+  totals.forEach(function(t){
+
+
+    grand.workDays += t.workDays; grand.present += t.present;
+
+
+    grand.leave += t.leave; grand.noleave += t.noleave; grand.other += t.other;
+
+
+  });
+
+
+  var grandAbsence = grand.leave + grand.noleave + grand.other;
+
+
+  var grandPct = grand.workDays > 0 ? (grand.present / grand.workDays * 100) : 0;
+
+
+  var summaryLine = 'សរុបរួម — មន្ត្រី-បុគ្គលិក ' + toKh(rptStaff.length) + ' នាក់ | ' +
+
+
+    'ថ្ងៃធ្វើការសរុប ' + toKh(grand.workDays) + ' | ' +
+
+
+    'មកធ្វើការសរុប ' + toKh(grand.present) + ' | ' +
+
+
+    'អវត្តមានសរុប ' + toKh(grandAbsence) + ' | ' +
+
+
+    'ភាគរយវត្តមានសរុប ' + toKh(grandPct.toFixed(1)) + '%';
+
+
+
+
+
+  var gt1 = document.getElementById('rpt-detail-grandtotal');
+
+
+  var gt2 = document.getElementById('rpt-summary-grandtotal');
+
+
+  if (gt1) gt1.textContent = summaryLine;
+
+
+  if (gt2) gt2.textContent = summaryLine;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// populate month/year selects
+
+
+
+
+
+(function initSelects(){
+
+
+
+
+
+  var today = new Date();
+
+
+
+
+
+  var mSel = document.getElementById('rpt-month');
+
+
+
+
+
+  var ySel = document.getElementById('rpt-year');
+
+
+
+
+
+  MONTH_NAMES.forEach(function(name, i){
+
+
+
+
+
+    var opt = document.createElement('option');
+
+
+
+
+
+    opt.value = i + 1;
+
+
+
+
+
+    opt.textContent = name;
+
+
+
+
+
+    if (i === today.getMonth()) opt.selected = true;
+
+
+
+
+
+    mSel.appendChild(opt);
+
+
+
+
+
+  });
+
+
+
+
+
+  [today.getFullYear() - 1, today.getFullYear(), today.getFullYear() + 1].forEach(function(y){
+
+
+
+
+
+    var opt = document.createElement('option');
+
+
+
+
+
+    opt.value = y;
+
+
+
+
+
+    opt.textContent = toKh(y);
+
+
+
+
+
+    if (y === today.getFullYear()) opt.selected = true;
+
+
+
+
+
+    ySel.appendChild(opt);
+
+
+
+
+
+  });
+
+
+
+
+
+})();
+
+
+
+
+
+
+
+
+
+
+
+function rptClassifyDay(rec){
+
+
+
+
+
+  if (!rec) return null;
+
+
+
+
+
+  var hasSigned = (rec.m_in && rec.m_in.sig) || (rec.a_in && rec.a_in.sig);
+
+
+
+
+
+  if (hasSigned) return 'present';
+
+
+
+
+
+  var note = (rec.note || '').trim();
+
+
+
+
+
+  if (note.indexOf('អត់ច្បាប់') !== -1) return 'noleave';
+
+
+
+
+
+  if (note.indexOf('ច្បាប់') !== -1) return 'leave';
+
+
+
+
+
+  if (note.length > 0) return 'other';
+
+
+
+
+
+  return 'noleave';
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+var CODE_MAP = {
+
+
+
+
+
+  present: {label:'✓', cls:'code-present'},
+
+
+
+
+
+  leave:   {label:'ច', cls:'code-leave'},
+
+
+
+
+
+  noleave: {label:'អ', cls:'code-noleave'},
+
+
+
+
+
+  other:   {label:'ផ', cls:'code-other'},
+
+
+
+
+
+  off:     {label:'–', cls:'code-off'}
+
+
+
+
+
+};
+
+
+
+
+
+
+
+
+
+
+
+window.rptGenerate = async function(){
+
+
+
+
+
+  var month = parseInt(document.getElementById('rpt-month').value);
+
+
+
+
+
+  var year  = parseInt(document.getElementById('rpt-year').value);
+
+
+
+
+
+  var status = document.getElementById('rpt-status');
+
+
+
+
+
+  status.textContent = '⏳ កំពុងទាញទិន្នន័យ...';
+
+
+
+
+
+
+
+
+
+
+
+  var daysInMonth = new Date(year, month, 0).getDate();
+
+
+
+
+
+  var allData = {};
+
+
+
+
+
+  var loads = [];
+
+
+
+
+
+  for (var d = 1; d <= daysInMonth; d++){
+
+
+
+
+
+    var dateStr = year + '-' + String(month).padStart(2,'0') + '-' + String(d).padStart(2,'0');
+
+
+
+
+
+    loads.push((function(ds){
+
+
+
+
+
+      return rptDb.ref('attendance/' + ds).get().then(function(snap){ allData[ds] = snap.val() || {}; });
+
+
+
+
+
+    })(dateStr));
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  try {
+
+
+
+
+
+    await Promise.all(loads);
+
+
+
+
+
+  } catch(e){
+
+
+
+
+
+    status.textContent = '⚠️ Error: ' + e.message;
+
+
+
+
+
+    return;
+
+
+
+
+
+  }
+
+
+
+
+
+  status.textContent = '';
+
+
+
+  // determine day-of-week + non-working-day flags for each date
+
+
+  // ច្បាប់៖ អាទិត្យ(Sun) ឈប់ជានិច្ច; ព្រហស្បតិ៍(Thu) រាប់ជាថ្ងៃធ្វើការតែ 3 ដងដំបូងក្នុងខែ ដងទី4 ឡើងទៅ ជាថ្ងៃឈប់
+
+
+  var dayNameShort = ['អា','ច','អ','ព','ព្រ','សុ','ស'];
+
+
+  var dayOfWeek = [];
+
+
+  var isNonWorkDay = [];
+
+
+  var thuCount = 0;
+
+
+  for (var d = 1; d <= daysInMonth; d++){
+
+
+    var dow = new Date(year, month - 1, d).getDay();
+
+
+    dayOfWeek[d] = dow;
+
+
+    var nonWork = false;
+
+
+    if (dow === 0){ nonWork = true; }
+
+
+    else if (dow === 4){
+
+
+      thuCount++;
+
+
+      if (thuCount > 3) nonWork = true;
+
+
+    }
+
+
+    isNonWorkDay[d] = nonWork;
+
+
+  }
+
+
+
+
+
+  // compute per-staff, per-day status + totals
+
+
+
+
+
+  var totals = rptStaff.map(function(){ return {present:0, leave:0, noleave:0, other:0, off:0, workDays:0}; });
+
+
+
+
+
+  var dayStatus = rptStaff.map(function(){ return []; });
+
+
+  for (var d = 1; d <= daysInMonth; d++){
+
+
+    var dateStr = year + '-' + String(month).padStart(2,'0') + '-' + String(d).padStart(2,'0');
+
+    var dayData = allData[dateStr] || {};
+
+    var isEmpty = Object.keys(dayData).length === 0;
+
+    rptStaff.forEach(function(s, i){
+
+      var st;
+
+      if (isNonWorkDay[d]){
+
+
+        st = 'off';
+
+
+      } else if (isEmpty){
+
+
+
+
+
+        st = 'off';
+
+
+
+
+
+      } else {
+
+
+
+
+
+        st = rptClassifyDay(dayData[s.name]) || 'noleave';
+
+
+
+
+
+      }
+
+
+
+
+
+      dayStatus[i][d] = st;
+
+
+
+
+
+      if (st === 'off'){ totals[i].off++; }
+
+
+
+
+
+      else {
+
+
+
+
+
+        totals[i].workDays++;
+
+
+
+
+
+        totals[i][st]++;
+
+
+
+
+
+      }
+
+
+
+
+
+    });
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  renderDetailTable(month, year, daysInMonth, dayStatus, dayOfWeek, isNonWorkDay, dayNameShort);
+
+
+
+
+
+  renderSummaryTable(month, year, daysInMonth, totals);
+
+
+
+
+
+  renderReportFooter(totals);
+
+
+
+
+
+
+
+
+
+
+
+  document.getElementById('rpt-detail-title').textContent =
+
+
+
+
+
+    'របាយការណ៍វត្តមានប្រចាំខែ ' + MONTH_NAMES[month-1] + ' ឆ្នាំ' + toKh(year);
+
+
+
+
+
+  document.getElementById('rpt-summary-title').textContent =
+
+
+
+
+
+    'តារាងសរុបវត្តមានប្រចាំខែ ' + MONTH_NAMES[month-1] + ' ឆ្នាំ' + toKh(year);
+
+
+
+
+
+  document.getElementById('rpt-summary-date').textContent =
+
+
+
+
+
+    'រោគ ថ្ងៃទី..... ខែ' + MONTH_NAMES[month-1] + ' ឆ្នាំ' + toKh(year);
+
+
+
+
+
+  document.getElementById('rpt-detail-date').textContent =
+
+
+
+
+
+    'រោគ ថ្ងៃទី..... ខែ' + MONTH_NAMES[month-1] + ' ឆ្នាំ' + toKh(year);
+
+
+
+
+
+};
+
+
+
+
+
+
+
+
+
+
+
+function renderDetailTable(month, year, daysInMonth, dayStatus, dayOfWeek, isNonWorkDay, dayNameShort){
+
+
+
+
+
+  var table = document.getElementById('rpt-detail-table');
+
+
+
+
+
+  dayOfWeek = dayOfWeek || [];
+
+
+  isNonWorkDay = isNonWorkDay || [];
+
+
+  dayNameShort = dayNameShort || ['អា','ច','អ','ព','ព្រ','សុ','ស'];
+
+
+
+
+
+  var thead = '<thead><tr>' +
+
+
+
+
+
+    '<th rowspan="3">ល.រ</th>' +
+
+
+
+
+
+    '<th rowspan="3">អត្តលេខមន្ត្រី</th>' +
+
+
+
+
+
+    '<th rowspan="3" style="text-align:left;">គោត្តនាម-នាម</th>' +
+
+
+
+
+
+    '<th rowspan="3">ភេទ</th>' +
+
+
+
+
+
+    '<th colspan="' + daysInMonth + '"></th>' +
+
+
+
+
+
+    '<th rowspan="3">ចំនួនអវត្តមាន</th>' +
+
+
+
+
+
+    '<th rowspan="3">មានច្បាប់</th>' +
+
+
+
+
+
+    '<th rowspan="3">អត់ច្បាប់</th>' +
+
+
+
+
+
+    '<th rowspan="3">ផ្សេងៗ</th>' +
+
+
+
+
+
+    '</tr><tr>';
+
+
+
+
+
+  for (var d = 1; d <= daysInMonth; d++){
+
+
+    var dow = dayOfWeek[d];
+
+
+    var nameCls = isNonWorkDay[d] ? ' class="day-off-col"' : '';
+
+
+    thead += '<th' + nameCls + ' style="font-size:10px;">' + (dayNameShort[dow] || '') + '</th>';
+
+
+  }
+
+
+
+
+
+  thead += '</tr><tr>';
+
+
+
+
+
+  for (var d = 1; d <= daysInMonth; d++){
+
+
+    var cls2 = isNonWorkDay[d] ? ' class="day-off-col"' : '';
+
+
+    thead += '<th' + cls2 + '>' + toKh(d) + '</th>';
+
+
+  }
+
+
+
+
+
+  thead += '</tr></thead>';
+
+
+  var rows = '<tbody>';
+
+
+  rptStaff.forEach(function(s, i){
+
+
+
+
+
+    var leave = 0, noleave = 0, other = 0;
+
+
+
+
+
+    var cells = '';
+
+
+
+
+
+    for (var d = 1; d <= daysInMonth; d++){
+
+
+
+
+
+      var st = dayStatus[i][d];
+
+
+
+
+
+      var c = CODE_MAP[st] || CODE_MAP.off;
+
+
+
+
+
+      cells += '<td class="' + c.cls + (isNonWorkDay[d] ? ' day-off-col' : '') + '">' + c.label + '</td>';
+
+
+
+
+
+      if (st === 'leave') leave++;
+
+
+
+
+
+      if (st === 'noleave') noleave++;
+
+
+
+
+
+      if (st === 'other') other++;
+
+
+
+
+
+    }
+
+
+
+
+
+    var totalAbsence = leave + noleave + other;
+
+
+
+
+
+    rows += '<tr>' +
+
+
+
+
+
+      '<td>' + toKh(i+1) + '</td>' +
+
+
+
+
+
+      '<td>' + s.id + '</td>' +
+
+
+
+
+
+      '<td class="name-cell">' + s.name + '</td>' +
+
+
+
+
+
+      '<td>' + s.gender + '</td>' +
+
+
+
+
+
+      cells +
+
+
+
+
+
+      '<td style="font-weight:800;">' + toKh(totalAbsence) + '</td>' +
+
+
+
+
+
+      '<td class="code-leave">' + toKh(leave) + '</td>' +
+
+
+
+
+
+      '<td class="code-noleave">' + toKh(noleave) + '</td>' +
+
+
+
+
+
+      '<td class="code-other">' + toKh(other) + '</td>' +
+
+
+
+
+
+      '</tr>';
+
+
+
+
+
+  });
+
+
+
+
+
+  rows += '</tbody>';
+
+
+
+
+
+  table.innerHTML = thead + rows;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+function renderSummaryTable(month, year, daysInMonth, totals){
+
+
+
+
+
+  var table = document.getElementById('rpt-summary-table');
+
+
+
+
+
+  var thead = '<thead><tr>' +
+
+
+
+
+
+    '<th>ល.រ</th><th>អត្តលេខមន្ត្រី</th><th style="text-align:left;">គោត្តនាម-នាម</th><th>ភេទ</th>' +
+
+
+
+
+
+    '<th>ចំនួនថ្ងៃធ្វើការ</th><th>ថ្ងៃមកធ្វើការ</th>' +
+
+
+
+
+
+    '<th>ចំនួនអវត្តមាន</th><th>មានច្បាប់</th><th>អត់ច្បាប់</th><th>ផ្សេងៗ</th>' +
+
+
+
+
+
+    '<th>ភាគរយ<br>វត្តមាន</th>' +
+
+
+
+
+
+    '</tr></thead>';
+
+
+
+
+
+
+
+
+
+
+
+  var rows = '<tbody>';
+
+
+
+
+
+  var grand = {workDays:0, present:0, leave:0, noleave:0, other:0};
+
+
+
+
+
+  rptStaff.forEach(function(s, i){
+
+
+
+
+
+    var t = totals[i];
+
+
+
+
+
+    var totalAbsence = t.leave + t.noleave + t.other;
+
+
+
+
+
+    var pct = t.workDays > 0 ? (t.present / t.workDays * 100) : 0;
+
+
+
+
+
+    grand.workDays += t.workDays; grand.present += t.present;
+
+
+
+
+
+    grand.leave += t.leave; grand.noleave += t.noleave; grand.other += t.other;
+
+
+
+
+
+    rows += '<tr>' +
+
+
+
+
+
+      '<td>' + toKh(i+1) + '</td>' +
+
+
+
+
+
+      '<td>' + s.id + '</td>' +
+
+
+
+
+
+      '<td class="name-cell">' + s.name + '</td>' +
+
+
+
+
+
+      '<td>' + s.gender + '</td>' +
+
+
+
+
+
+      '<td>' + toKh(t.workDays) + '</td>' +
+
+
+
+
+
+      '<td class="code-present">' + toKh(t.present) + '</td>' +
+
+
+
+
+
+      '<td style="font-weight:800;">' + toKh(totalAbsence) + '</td>' +
+
+
+
+
+
+      '<td class="code-leave">' + toKh(t.leave) + '</td>' +
+
+
+
+
+
+      '<td class="code-noleave">' + toKh(t.noleave) + '</td>' +
+
+
+
+
+
+      '<td class="code-other">' + toKh(t.other) + '</td>' +
+
+
+
+
+
+      '<td>' + toKh(pct.toFixed(1)) + '%</td>' +
+
+
+
+
+
+      '</tr>';
+
+
+
+
+
+  });
+
+
+
+
+
+  var grandAbsence = grand.leave + grand.noleave + grand.other;
+
+
+
+
+
+  var grandPct = grand.workDays > 0 ? (grand.present / grand.workDays * 100) : 0;
+
+
+
+
+
+  rows += '<tr style="font-weight:800;background:#1e3a6d;">' +
+
+
+
+
+
+    '<td colspan="4">សរុប</td>' +
+
+
+
+
+
+    '<td>' + toKh(grand.workDays) + '</td>' +
+
+
+
+
+
+    '<td>' + toKh(grand.present) + '</td>' +
+
+
+
+
+
+    '<td>' + toKh(grandAbsence) + '</td>' +
+
+
+
+
+
+    '<td>' + toKh(grand.leave) + '</td>' +
+
+
+
+
+
+    '<td>' + toKh(grand.noleave) + '</td>' +
+
+
+
+
+
+    '<td>' + toKh(grand.other) + '</td>' +
+
+
+
+
+
+    '<td>' + toKh(grandPct.toFixed(1)) + '%</td>' +
+
+
+
+
+
+    '</tr>';
+
+
+
+
+
+  rows += '</tbody>';
+
+
+
+
+
+  table.innerHTML = thead + rows;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+window.rptPrint = function(which){
+
+
+
+
+
+  var detailWrap = document.getElementById('rpt-detail-wrap');
+
+
+
+
+
+  var summaryWrap = document.getElementById('rpt-summary-wrap');
+
+
+
+
+
+  detailWrap.classList.remove('print-active');
+
+
+
+
+
+  summaryWrap.classList.remove('print-active');
+
+
+
+
+
+  if (which === 'detail') detailWrap.classList.add('print-active');
+
+
+
+
+
+  else summaryWrap.classList.add('print-active');
+
+
+
+
+
+  setTimeout(function(){ window.print(); }, 50);
+
+
+
+
+
+};
+
+
+// auto-generate on first load
+
+
+
+
+
+rptGenerate();</script></template><div id="att-sig-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:1000;align-items:center;justify-content:center"><div style="background:#fff;padding:18px;border-radius:12px;width:310px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.4)"><h3 id="att-modal-title" style="margin:0 0 4px 0;font-weight:800;color:#1e293b;font-size:14px">គូសហត្ថលេខា</h3><div id="att-modal-gps-status" style="font-size:11px;margin-bottom:10px;padding:4px 8px;border-radius:4px;background:#dcfce7;color:#15803d;font-weight:700"></div><canvas id="att-sig-canvas" width="270" height="120" style="border:2px solid #2563eb;border-radius:8px;display:block;margin:0 auto 12px;background:#f8fafc;touch-action:none"></canvas><div style="display:flex;justify-content:center;gap:8px"><button onclick="attCtxClear()" style="background:#f59e0b;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:700;font-size:12px">🧹 សម្អាត</button><button onclick="attSaveSignature()" style="background:#16a34a;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:700;font-size:12px">💾 រក្សាទុក</button><button onclick="attCloseModal()" style="background:#64748b;color:#fff;border:none;padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:700;font-size:12px">✕ បោះបង់</button></div></div></div><script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-database-compat.js"></script><script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script><script type="module">// ════════════════════════════════════════════════════════════
+
+
+
+
+
+			//  FIREBASE INIT
+
+
+
+
+
+			// ════════════════════════════════════════════════════════════
+
+
+
+
+
+			firebase.initializeApp({
+
+
+
+
+
+				apiKey: "AIzaSyB35WLr1y5_QT3j-0x7Mb2F7QaaYXLdIcQ",
+
+
+
+
+
+				authDomain: "packagedemo-b600c.firebaseapp.com",
+
+
+
+
+
+				databaseURL:
+
+
+
+
+
+					"https://packagedemo-b600c-default-rtdb.asia-southeast1.firebasedatabase.app",
+
+
+
+
+
+				projectId: "packagedemo-b600c",
+
+
+
+
+
+				storageBucket: "packagedemo-b600c.firebasestorage.app",
+
+
+
+
+
+				messagingSenderId: "601958630212",
+
+
+
+
+
+				appId: "1:601958630212:web:e140ee683e203f3e464d11"
+
+
+
+
+
+			});
+
+
+
+
+
+			var db = firebase.database();
+
+
+
+
+
+			var auth = firebase.auth(); // បង្កើត Auth object
+
+			var SCHOOL_LAT = 13.7000257;
+
+
+
+
+
+			var SCHOOL_LNG = 103.4108298;
+
+
+
+
+
+			var SCHOOL_RADIUS = 3000;
+
+
+			var gpsState = {
+
+
+
+
+
+				status: "loading",
+
+
+
+
+
+				lat: null,
+
+
+
+
+
+				lng: null,
+
+
+
+
+
+				distance: null,
+
+
+
+
+
+				accuracy: null,
+
+
+
+
+
+				watchId: null,
+
+
+
+
+
+			};
+
+
+
+
+
+
+
+
+
+
+
+			function haversine(lat1, lon1, lat2, lon2) {
+
+
+
+
+
+				var R = 6371000;
+
+
+
+
+
+				var dLat = ((lat2 - lat1) * Math.PI) / 180;
+
+
+
+
+
+				var dLon = ((lon2 - lon1) * Math.PI) / 180;
+
+
+
+
+
+				var a =
+
+
+
+
+
+					Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+
+
+
+
+
+					Math.cos((lat1 * Math.PI) / 180) *
+
+
+
+
+
+						Math.cos((lat2 * Math.PI) / 180) *
+
+
+
+
+
+						Math.sin(dLon / 2) *
+
+
+
+
+
+						Math.sin(dLon / 2);
+
+
+
+
+
+				return 2 * R * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function startGPSWatch() {
+
+
+
+
+
+				if (!navigator.geolocation) {
+
+
+
+
+
+					gpsState.status = "denied";
+
+
+
+
+
+					updateGPSBanner();
+
+
+
+
+
+					updateAllCellGPSState();
+
+
+
+
+
+					return;
+
+
+
+
+
+				}
+
+
+
+
+
+				var opts = {
+
+
+
+
+
+					enableHighAccuracy: true,
+
+
+
+
+
+					maximumAge: 10000,
+
+
+
+
+
+					timeout: 15000,
+
+
+
+
+
+				};
+
+
+
+
+
+
+
+
+
+
+
+				gpsState.watchId = navigator.geolocation.watchPosition(
+
+
+
+
+
+					function (pos) {
+
+
+
+
+
+						var dist = haversine(
+
+
+
+
+
+							pos.coords.latitude,
+
+
+
+
+
+							pos.coords.longitude,
+
+
+
+
+
+							SCHOOL_LAT,
+
+
+
+
+
+							SCHOOL_LNG
+
+
+
+
+
+						);
+
+
+
+
+
+						gpsState.lat = pos.coords.latitude;
+
+
+
+
+
+						gpsState.lng = pos.coords.longitude;
+
+
+
+
+
+						gpsState.distance = Math.round(dist);
+
+
+
+
+
+						gpsState.accuracy = Math.round(pos.coords.accuracy);
+
+
+
+
+
+						gpsState.status = dist <= SCHOOL_RADIUS ? "ok" : "bad";
+
+
+
+
+
+						updateGPSBanner();
+
+
+
+
+
+						updateAllCellGPSState();
+
+
+
+
+
+					},
+
+
+
+
+
+					function (err) {
+
+
+
+
+
+						gpsState.status = err.code === 1 ? "denied" : "error";
+
+
+
+
+
+						updateGPSBanner();
+
+
+
+
+
+						updateAllCellGPSState();
+
+
+
+
+
+					},
+
+
+
+
+
+					opts
+
+
+
+
+
+				);
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function stopGPSWatch() {
+
+
+
+
+
+				if (gpsState.watchId !== null) {
+
+
+
+
+
+					navigator.geolocation.clearWatch(gpsState.watchId);
+
+
+
+
+
+					gpsState.watchId = null;
+
+
+
+
+
+				}
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function updateGPSBanner() {
+
+
+
+
+
+				var banner = document.getElementById("gps-banner");
+
+
+
+
+
+				if (!banner) return;
+
+
+
+
+
+				var dot = banner.querySelector(".gps-dot");
+
+
+
+
+
+				var text = banner.querySelector(".gps-text");
+
+
+
+
+
+				switch (gpsState.status) {
+
+
+
+
+
+					case "loading":
+
+
+
+
+
+						banner.className = "gps-loading-banner";
+
+
+
+
+
+						dot.className = "gps-dot loading";
+
+
+
+
+
+						text.textContent = "⏳ កំពុងរង់ចាំ GPS…";
+
+
+
+
+
+						break;
+
+
+
+
+
+					case "ok":
+
+
+
+
+
+						banner.className = "gps-ok";
+
+
+
+
+
+						dot.className = "gps-dot ok";
+
+
+
+
+
+						text.textContent =
+
+
+
+
+
+							"✅ នៅក្នុងសាលា — " +
+
+
+
+
+
+							gpsState.distance +
+
+
+
+
+
+							"m (±" +
+
+
+
+
+
+							gpsState.accuracy +
+
+
+
+
+
+							"m)";
+
+
+
+
+
+						break;
+
+
+
+
+
+					case "bad":
+
+
+
+
+
+						banner.className = "gps-bad";
+
+
+
+
+
+						dot.className = "gps-dot bad";
+
+
+
+
+
+						text.textContent =
+
+
+
+
+
+							"❌ នៅក្រៅសាលា " +
+
+
+
+
+
+							gpsState.distance +
+
+
+
+
+
+							"m — ត្រូវការ < " +
+
+
+
+
+
+							SCHOOL_RADIUS +
+
+
+
+
+
+							"m";
+
+
+
+
+
+						break;
+
+
+
+
+
+					case "denied":
+
+
+
+
+
+						banner.className = "gps-denied";
+
+
+
+
+
+						dot.className = "gps-dot denied";
+
+
+
+
+
+						text.textContent =
+
+
+
+
+
+							"🚫 GPS ត្រូវបានប្លុក — សូម Allow Location";
+
+
+
+
+
+						break;
+
+
+
+
+
+					case "error":
+
+
+
+
+
+						banner.className = "gps-bad";
+
+
+
+
+
+						dot.className = "gps-dot bad";
+
+
+
+
+
+						text.textContent = "⚠️ GPS Error — សូម Refresh";
+
+
+
+
+
+						break;
+
+
+
+
+
+				}
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function updateAllCellGPSState() {
+
+
+
+
+
+				document
+
+
+
+
+
+					.querySelectorAll(".att-sig-container")
+
+
+
+
+
+					.forEach(function (c) {
+
+
+
+
+
+						if (c.dataset.sigData) return;
+
+
+
+
+
+						applyGPSStateToCell(c);
+
+
+
+
+
+					});
+
+
+
+
+
+				updateModalGPSStatus();
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function applyGPSStateToCell(c) {
+
+
+
+
+
+				c.classList.remove(
+
+
+
+
+
+					"open-now",
+
+
+
+
+
+					"gps-blocked",
+
+
+
+
+
+					"gps-loading",
+
+
+
+
+
+					"locked"
+
+
+
+
+
+				);
+
+
+
+
+
+				var ph = c.querySelector(".att-sig-placeholder");
+
+
+
+
+
+				switch (gpsState.status) {
+
+
+
+
+
+					case "loading":
+
+
+
+
+
+						c.classList.add("gps-loading");
+
+
+
+
+
+						if (ph) ph.innerHTML = "⏳<br>GPS…";
+
+
+
+
+
+						break;
+
+
+
+
+
+					case "ok":
+
+
+
+
+
+						c.classList.add("open-now");
+
+
+
+
+
+						var col = parseInt(c.dataset.colIdx);
+
+
+
+
+
+						var labels = [
+
+
+
+
+
+							"ព្រឹក-ចូល",
+
+
+
+
+
+							"ព្រឹក-ចេញ",
+
+
+
+
+
+							"រសៀល-ចូល",
+
+
+
+
+
+							"រសៀល-ចេញ",
+
+
+
+
+
+						];
+
+
+
+
+
+						if (ph) ph.innerHTML = "✍️<br>" + (labels[col] || "");
+
+
+
+
+
+						break;
+
+
+
+
+
+					case "bad":
+
+
+
+
+
+						c.classList.add("gps-blocked");
+
+
+
+
+
+						if (ph)
+
+
+
+
+
+							ph.innerHTML = "📍❌<br>" + gpsState.distance + "m";
+
+
+
+
+
+						break;
+
+
+
+
+
+					case "denied":
+
+
+
+
+
+					case "error":
+
+
+
+
+
+						c.classList.add("gps-blocked");
+
+
+
+
+
+						if (ph) ph.innerHTML = "🚫<br>GPS Off";
+
+
+
+
+
+						break;
+
+
+
+
+
+				}
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function updateModalGPSStatus() {
+
+
+
+
+
+				var el = document.getElementById("att-modal-gps-status");
+
+
+
+
+
+				if (!el) return;
+
+
+
+
+
+				switch (gpsState.status) {
+
+
+
+
+
+					case "ok":
+
+
+
+
+
+						el.style.background = "#dcfce7";
+
+
+
+
+
+						el.style.color = "#15803d";
+
+
+
+
+
+						el.textContent =
+
+
+
+
+
+							"✅ ក្នុងសាលា " + gpsState.distance + "m · GPS OK";
+
+
+
+
+
+						break;
+
+
+
+
+
+					case "bad":
+
+
+
+
+
+						el.style.background = "#fee2e2";
+
+
+
+
+
+						el.style.color = "#b91c1c";
+
+
+
+
+
+						el.textContent =
+
+
+
+
+
+							"❌ ក្រៅសាលា " +
+
+
+
+
+
+							gpsState.distance +
+
+
+
+
+
+							"m — មិនអាចរក្សាទុក!";
+
+
+
+
+
+						break;
+
+
+
+
+
+					default:
+
+
+
+
+
+						el.style.background = "#fefce8";
+
+
+
+
+
+						el.style.color = "#92400e";
+
+
+
+
+
+						el.textContent = "⏳ GPS Loading…";
+
+
+
+
+
+				}
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function showGPSError() {
+
+
+
+
+
+				var toast = document.getElementById("gps-error-toast");
+
+
+
+
+
+				if (!toast) return;
+
+
+
+
+
+				var msgs = {
+
+
+
+
+
+					bad:
+
+
+
+
+
+						"❌ មិនអនុញ្ញាតចុះវត្តមាន!\nអ្នកនៅឆ្ងាយពីសាលា " +
+
+
+
+
+
+						gpsState.distance +
+
+
+
+
+
+						"m",
+
+
+
+
+
+					denied: "🚫 GPS ត្រូវបានប្លុក!\nសូម Allow Location",
+
+
+
+
+
+					error: "⚠️ GPS Error!\nសូម Refresh ម្ដងទៀត",
+
+
+
+
+
+					loading: "⏳ GPS កំពុង Loading…",
+
+
+
+
+
+				};
+
+
+
+
+
+				toast.textContent = msgs[gpsState.status] || "⚠️ GPS Error";
+
+
+
+
+
+				toast.style.display = "block";
+
+
+
+
+
+				toast.style.whiteSpace = "pre-line";
+
+
+
+
+
+				clearTimeout(toast._t);
+
+
+
+
+
+				toast._t = setTimeout(function () {
+
+
+
+
+
+					toast.style.display = "none";
+
+
+
+
+
+				}, 3500);
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			// ══ KHMER DATE ══════════════════════════════════════════════
+
+
+
+
+
+			function toKhmer(n) {
+
+
+
+
+
+				return String(n).replace(/[0-9]/g, function (d) {
+
+
+
+
+
+					return "០១២៣៤៥៦៧៨៩"[d];
+
+
+
+
+
+				});
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			var KH_WEEKDAYS_LONG = [
+
+
+
+
+
+				"ថ្ងៃអាទិត្យ", "ថ្ងៃច័ន្ទ", "ថ្ងៃអង្គារ", "ថ្ងៃពុធ",
+
+
+
+
+
+				"ថ្ងៃព្រហស្បតិ៍", "ថ្ងៃសុក្រ", "ថ្ងៃសៅរ៍",
+
+
+
+
+
+			];
+
+
+
+
+
+			var KH_MONTHS_SOLAR = [
+
+
+
+
+
+				"មករា", "កុម្ភៈ", "មីនា", "មេសា", "ឧសភា", "មិថុនា",
+
+
+
+
+
+				"កក្កដា", "សីហា", "កញ្ញា", "តុលា", "វិច្ឆិកា", "ធ្នូ",
+
+
+
+
+
+			];
+
+
+
+
+
+			// ខែច័ន្ទគតិ (ប្រហាក់ប្រហែលទៅតាមខែសុរិយគតិ) — គ្របដណ្ដប់គ្រប់ខែទាំង១២
+
+
+
+
+
+			var KH_MONTHS_LUNAR = {
+
+
+
+
+
+				0: "មាឃ", 1: "ផល្គុន", 2: "ចេត្រ", 3: "ពិសាខ",
+
+
+
+
+
+				4: "ជេស្ឋ", 5: "អាសាឍ", 6: "ស្រាពណ៍", 7: "ភទ្របទ",
+
+
+
+
+
+				8: "អស្សុជ", 9: "កត្តិក", 10: "មិគសិរ", 11: "បុស្ស",
+
+
+
+
+
+			};
+
+
+
+
+
+			var KH_ANIMALS = [
+
+
+
+
+
+				"ជូត", "ឆ្លូវ", "ខាល", "ថោះ", "រោង", "ម្សាញ់",
+
+
+
+
+
+				"មមី", "មមែ", "វក", "រកា", "ច", "កុរ",
+
+
+
+
+
+			];
+
+
+
+
+
+			var KH_SAK = [
+
+
+
+
+
+				"សំរឹទ្ធិស័ក", "ឯកស័ក", "ទោស័ក", "ត្រីស័ក", "ចត្វាស័ក",
+
+
+
+
+
+				"បញ្ចស័ក", "ឆស័ក", "សប្តស័ក", "អដ្ឋស័ក", "នព្វស័ក",
+
+
+
+
+
+			];
+
+
+
+
+
+
+
+
+
+
+
+			function khmerSolarDateStr(d) {
+
+
+
+
+
+				return (
+
+
+
+
+
+					"ថ្ងៃទី" +
+
+
+
+
+
+					toKhmer(d.getDate()) +
+
+
+
+
+
+					" ខែ" +
+
+
+
+
+
+					KH_MONTHS_SOLAR[d.getMonth()] +
+
+
+
+
+
+					" ឆ្នាំ" +
+
+
+
+
+
+					toKhmer(d.getFullYear())
+
+
+
+
+
+				);
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function khmerLunarDateStr(d) {
+
+
+
+
+
+				var base = new Date("2026-05-13"),
+
+
+
+
+
+					diff = Math.round((d - base) / 86400000);
+
+
+
+
+
+				var ld = (9 + diff) % 30 || 30;
+
+
+
+
+
+				if (ld <= 0) ld += 30;
+
+
+
+
+
+				var phase = ld <= 15 ? "កើត" : "រោច",
+
+
+
+
+
+					pn = ld <= 15 ? ld : ld - 15 || 15;
+
+
+
+
+
+				var lm = KH_MONTHS_LUNAR[d.getMonth()];
+
+
+
+
+
+
+
+
+
+
+
+				// ចុល្លសករាជ / ព.ស / ឆ្នាំសត្វ / ស័ក — គណនាតាមថ្ងៃឆ្នាំថ្មីខ្មែរ (~១៤មេសា)
+
+
+
+
+
+				var afterKhmerNewYear =
+
+
+
+
+
+					d.getMonth() > 3 ||
+
+
+
+
+
+					(d.getMonth() === 3 && d.getDate() >= 14);
+
+
+
+
+
+				var cs = afterKhmerNewYear
+
+
+
+
+
+					? d.getFullYear() - 638
+
+
+
+
+
+					: d.getFullYear() - 639;
+
+
+
+
+
+				var be = cs + 1182;
+
+
+
+
+
+				var animalName = KH_ANIMALS[(((cs % 12) + 12) % 12 + 10) % 12];
+
+
+
+
+
+				var sakName = KH_SAK[((cs % 10) + 10) % 10];
+
+
+
+
+
+
+
+
+
+
+
+				return (
+
+
+
+
+
+					KH_WEEKDAYS_LONG[d.getDay()] +
+
+
+
+
+
+					" " +
+
+
+
+
+
+					toKhmer(pn) +
+
+
+
+
+
+					phase +
+
+
+
+
+
+					" ខែ" +
+
+
+
+
+
+					lm +
+
+
+
+
+
+					" ឆ្នាំ" +
+
+
+
+
+
+					animalName +
+
+
+
+
+
+					" " +
+
+
+
+
+
+					sakName +
+
+
+
+
+
+					" ព.ស " +
+
+
+
+
+
+					toKhmer(be)
+
+
+
+
+
+				);
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function attConvertKhmerDate(dateInput) {
+
+
+
+
+
+				var d = new Date(dateInput);
+
+
+
+
+
+				var solarNoDay = khmerSolarDateStr(d);
+
+
+
+
+
+				var titleEl = document.getElementById("att-full-solar-title");
+
+
+
+
+
+				var solarEl = document.getElementById("att-solardate");
+
+
+
+
+
+				if (titleEl) titleEl.textContent = "សម្រាប់" + solarNoDay;
+
+
+
+
+
+				if (solarEl) solarEl.textContent = "រោគ " + solarNoDay;
+
+
+
+
+
+
+
+
+
+
+
+				var lunarEl = document.getElementById("att-lunardate");
+
+
+
+
+
+				if (lunarEl) lunarEl.textContent = khmerLunarDateStr(d);
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			// ══ STAFF LIST (បានបន្ថែមលេខទូរសព្ទសម្រាប់ផ្ទៀងផ្ទាត់តួនាទី) ══════════════════════════════
+
+
+
+
+
+			var attStaff = [
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "សុខ សារើន",
+
+
+
+
+
+					gender: "ស្រី",
+
+
+
+
+
+					position: "នាយិកា",
+
+
+
+
+
+					cls: "-",
+
+
+
+
+
+					phone: "+85589663966", // បងអាចដូរលេខពិតរបស់ពួកគាត់នៅទីនេះ
+
+
+
+
+
+					role: "director"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "យ៉េន សារី",
+
+
+
+
+
+					gender: "ប្រុស",
+
+
+
+
+
+					position: "នាយករង",
+
+
+
+
+
+					cls: "-",
+
+
+
+
+
+					phone: "+85585246698",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "អ៊ុន ប៊ុនទុង",
+
+
+
+
+
+					gender: "ប្រុស",
+
+
+
+
+
+					position: "លេខាធិការ",
+
+
+
+
+
+					cls: "-",
+
+
+
+
+
+					phone: "+85592272005",
+
+
+
+
+
+					role: "admin"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "រ៉ែម សុភក្ដិ",
+
+
+
+
+
+					gender: "ស្រី",
+
+
+
+
+
+					position: "ថ្នាក់",
+
+
+
+
+
+					cls: "1A",
+
+
+
+
+
+					phone: "+855883435566",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "ស្វាង មនោរម្យ",
+
+
+
+
+
+					gender: "ស្រី",
+
+
+
+
+
+					position: "ថ្នាក់",
+
+
+
+
+
+					cls: "5A",
+
+
+
+
+
+					phone: "+855976858898",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "ប៉ោង ស្រីពេជ្រ",
+
+
+
+
+
+					gender: "ស្រី",
+
+
+
+
+
+					position: "ថ្នាក់",
+
+
+
+
+
+					cls: "2A",
+
+
+
+
+
+					phone: "+855889304103",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "លេង ចាន់លាវ",
+
+
+
+
+
+					gender: "ស្រី",
+
+
+
+
+
+					position: "ថ្នាក់",
+
+
+
+
+
+					cls: "2B",
+
+
+
+
+
+					phone: "+855884661856",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "អែង ផល្លែន",
+
+
+
+
+
+					gender: "ស្រី",
+
+
+
+
+
+					position: "ថ្នាក់",
+
+
+
+
+
+					cls: "3B",
+
+
+
+
+
+					phone: "+85592620771",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "ប៊ី ពិសី",
+
+
+
+
+
+					gender: "ស្រី",
+
+
+
+
+
+					position: "ថ្នាក់",
+
+
+
+
+
+					cls: "3A",
+
+
+
+
+
+					phone: "+855889339499",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "អឿន សុខៀប",
+
+
+
+
+
+					gender: "ស្រី",
+
+
+
+
+
+					position: "ថ្នាក់",
+
+
+
+
+
+					cls: "4B",
+
+
+
+
+
+					phone: "+8550977075979",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "ឆេន សាវដា",
+
+
+
+
+
+					gender: "ស្រី",
+
+
+
+
+
+					position: "ថ្នាក់",
+
+
+
+
+
+					cls: "4A",
+
+
+
+
+
+					phone: "+855974611580",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "រ៉ោម សម្ផស្ស",
+
+
+
+
+
+					gender: "ប្រុស",
+
+
+
+
+
+					position: "ថ្នាក់",
+
+
+
+
+
+					cls: "5B",
+
+
+
+
+
+					phone: "+855314234466",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "ឈួត សេរ៉ូម",
+
+
+
+
+
+					gender: "ស្រី",
+
+
+
+
+
+					position: "ថ្នាក់",
+
+
+
+
+
+					cls: "6A",
+
+
+
+
+
+					phone: "+855976700999",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "កែវ ខន",
+
+
+
+
+
+					gender: "ប្រុស",
+
+
+
+
+
+					position: "កសិកម្ម",
+
+
+
+
+
+					cls: "-",
+
+
+
+
+
+					phone: "+85590887118",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "លន់ ចាន់នឹក",
+
+
+
+
+
+					gender: "ស្រី",
+
+
+
+
+
+					position: "បណ្ណារក្ស",
+
+
+
+
+
+					cls: "-",
+
+
+
+
+
+					phone: "+855972424423",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "ពាន ណូរ៉ា",
+
+
+
+
+
+					gender: "ស្រី",
+
+
+
+
+
+					position: "ថ្នាក់",
+
+
+
+
+
+					cls: "ម.ត",
+
+
+
+
+
+					phone: "+855978680864",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+				{
+
+
+
+
+
+					name: "ឡុក ម៉ាក់តី",
+
+
+
+
+
+					gender: "ស្រី",
+
+
+
+
+
+					position: "ថ្នាក់",
+
+
+
+
+
+					cls: "ម.ត",
+
+
+
+
+
+					phone: "+855886534343",
+
+
+
+
+
+					role: "teacher"
+
+
+
+
+
+				},
+
+
+
+
+
+			];
+
+
+
+
+
+
+
+
+
+
+
+			function attCreateRow(idx, s) {
+
+
+
+
+
+				var tr = document.createElement("tr");
+
+
+
+
+
+				tr.dataset.idx = idx;
+
+
+
+
+
+				function sigCell(colIdx, label) {
+
+
+
+
+
+					return (
+
+
+
+
+
+						'<td style="padding:2px;min-width:90px;text-align:center;background:#fff;">' +
+
+
+
+
+
+						'<div class="att-sig-container gps-loading" data-col-idx="' +
+
+
+
+
+
+						colIdx +
+
+
+
+
+
+						'" onclick="attOpenSigModal(this,\'' +
+
+
+
+
+
+						label +
+
+
+
+
+
+						"'," +
+
+
+
+
+
+						colIdx +
+
+
+
+
+
+						')">' +
+
+
+
+
+
+						'<span class="att-sig-placeholder">⏳<br>GPS…</span>' +
+
+
+
+
+
+						'<img class="att-sig-img" src="" alt="">' +
+
+
+
+
+
+						'<span class="att-sig-time"></span>' +
+
+
+
+
+
+						"</div></td>"
+
+
+
+
+
+					);
+
+
+
+
+
+				}
+
+
+
+
+
+				tr.innerHTML =
+
+
+
+
+
+					'<td style="padding:4px;text-align:center;font-size:12px;color:#000">' +
+
+
+
+
+
+					toKhmer(idx + 1) +
+
+
+
+
+
+					"</td>" +
+
+
+
+
+
+					'<td style="padding:4px;font-weight:800;font-size:13px;white-space:nowrap;color:#000">' +
+
+
+
+
+
+					s.name +
+
+
+
+
+
+					"</td>" +
+
+
+
+
+
+					'<td style="padding:4px;text-align:center;font-size:13px;color:#000">' +
+
+
+
+
+
+					s.gender +
+
+
+
+
+
+					"</td>" +
+
+
+
+
+
+					'<td style="padding:4px;font-size:12px;white-space:nowrap;color:#000">' +
+
+
+
+
+
+					s.position +
+
+
+
+
+
+					(s.cls !== "-" ? " " + s.cls : "") +
+
+
+
+
+
+					"</td>" +
+
+
+
+
+
+					sigCell(0, "ព្រឹក-ចូល") +
+
+
+
+
+
+					sigCell(1, "ព្រឹក-ចេញ") +
+
+
+
+
+
+					sigCell(2, "រសៀល-ចូល") +
+
+
+
+
+
+					sigCell(3, "រសៀល-ចេញ") +
+
+
+
+
+
+					'<td class="att-phone-cell" style="padding:4px;text-align:center;font-size:11px;min-width:90px;color:#000;background:#fff;">' + s.phone + '</td>' +
+
+
+
+
+
+					'<td style="padding:4px;background:#fff;"><input type="text" class="att-note" placeholder="..."></td>';
+
+
+
+
+
+				return tr;
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function attSetSigData(container, dataObj) {
+
+
+
+
+
+				var timeEl = container.querySelector(".att-sig-time");
+
+
+
+
+
+				var imgEl = container.querySelector(".att-sig-img");
+
+
+
+
+
+				var ph = container.querySelector(".att-sig-placeholder");
+
+
+
+
+
+
+
+
+
+
+
+				if (dataObj && dataObj.time && dataObj.sig) {
+
+
+
+
+
+					timeEl.textContent = dataObj.time;
+
+
+
+
+
+					timeEl.style.display = "block";
+
+
+
+
+
+					imgEl.src = dataObj.sig;
+
+
+
+
+
+					imgEl.style.display = "block";
+
+
+
+
+
+					ph.style.display = "none";
+
+
+
+
+
+					container.dataset.sigData = JSON.stringify(dataObj);
+
+
+
+
+
+					container.classList.remove(
+
+
+
+
+
+						"open-now",
+
+
+
+
+
+						"gps-blocked",
+
+
+
+
+
+						"gps-loading"
+
+
+
+
+
+					);
+
+
+
+
+
+					container.classList.add("locked");
+
+
+
+
+
+				} else {
+
+
+
+
+
+					timeEl.textContent = "";
+
+
+
+
+
+					timeEl.style.display = "none";
+
+
+
+
+
+					imgEl.src = "";
+
+
+
+
+
+					imgEl.style.display = "none";
+
+
+
+
+
+					ph.style.display = "block";
+
+
+
+
+
+					container.dataset.sigData = "";
+
+
+
+
+
+					applyGPSStateToCell(container);
+
+
+
+
+
+				}
+
+
+
+
+
+
+
+
+
+
+
+				var row = container.closest("tr");
+
+
+
+
+
+				if (row && row.dataset.idx === "0") {
+
+
+
+
+
+					var cs = row.querySelectorAll(".att-sig-container");
+
+
+
+
+
+					if (cs[0].dataset.sigData || cs[2].dataset.sigData) {
+
+
+
+
+
+						row.classList.add("signed-first-row");
+
+
+
+
+
+					} else {
+
+
+
+
+
+						row.classList.remove("signed-first-row");
+
+
+
+
+
+					}
+
+
+
+
+
+				}
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			// ស្ថិតិអវត្តមានតាមប្រភេទ៖ ច្បាប់ / អត់ច្បាប់ / បេសកកម្ម / ផ្សេងៗ (រាប់ទាំងប្រុសនិងស្រី)
+
+
+
+
+
+			function updateAttendanceStats() {
+
+
+
+
+
+				var leaveCount = 0, leaveFemaleCount = 0;
+
+
+
+
+
+				var noleaveCount = 0, noleaveFemaleCount = 0;
+
+
+
+
+
+				var missionCount = 0, missionFemaleCount = 0;
+
+
+
+
+
+				var otherCount = 0, otherFemaleCount = 0;
+
+
+
+
+
+
+
+
+
+
+
+				document
+
+
+
+
+
+					.querySelectorAll("#att-tbody tr")
+
+
+
+
+
+					.forEach(function (tr) {
+
+
+
+
+
+						var idx = tr.dataset.idx;
+
+
+
+
+
+						var s = attStaff[idx];
+
+
+
+
+
+						if (!s) return;
+
+
+
+
+
+
+
+
+
+
+
+						var cs = tr.querySelectorAll(".att-sig-container");
+
+
+
+
+
+						var noteInput = tr.querySelector("input.att-note");
+
+
+
+
+
+						var noteValue = noteInput ? noteInput.value.trim() : "";
+
+
+
+
+
+
+
+
+
+
+
+						var hasSigned =
+
+
+
+
+
+							cs[0].dataset.sigData || cs[2].dataset.sigData;
+
+
+
+
+
+						var isFemale = s.gender === "ស្រី" || s.gender === "F";
+
+
+
+
+
+
+
+
+
+
+
+						if (hasSigned) return; // មកធ្វើការ — មិនរាប់ជាអវត្តមាន
+
+
+
+
+
+
+
+
+
+
+
+						if (noteValue.indexOf("អត់ច្បាប់") !== -1) {
+
+
+
+
+
+							noleaveCount++;
+
+
+
+
+
+							if (isFemale) noleaveFemaleCount++;
+
+
+
+
+
+						} else if (noteValue.indexOf("ច្បាប់") !== -1) {
+
+
+
+
+
+							leaveCount++;
+
+
+
+
+
+							if (isFemale) leaveFemaleCount++;
+
+
+
+
+
+						} else if (
+
+
+
+
+
+							noteValue.indexOf("បេសកកម្ម") !== -1 ||
+
+
+
+
+
+							noteValue.toLowerCase().indexOf("mission") !== -1
+
+
+
+
+
+						) {
+
+
+
+
+
+							missionCount++;
+
+
+
+
+
+							if (isFemale) missionFemaleCount++;
+
+
+
+
+
+						} else if (noteValue.length > 0) {
+
+
+
+
+
+							otherCount++;
+
+
+
+
+
+							if (isFemale) otherFemaleCount++;
+
+
+
+
+
+						} else {
+
+
+
+
+
+							// គ្មានកំណត់ចំណាំ = អត់ច្បាប់ ដោយស្វ័យប្រវត្តិ
+
+
+
+
+
+							noleaveCount++;
+
+
+
+
+
+							if (isFemale) noleaveFemaleCount++;
+
+
+
+
+
+						}
+
+
+
+
+
+					});
+
+
+
+
+
+
+
+
+
+
+
+				var absentCount =
+
+
+
+
+
+					leaveCount + noleaveCount + missionCount + otherCount;
+
+
+
+
+
+
+
+
+
+
+
+				function fmt(count, femaleCount, colorCls) {
+
+
+
+
+
+					return (
+
+
+
+
+
+						toKhmer(String(count).padStart(2, "0")) +
+
+
+
+
+
+						' <span class="text-xs ' + colorCls + '">(ស្រី: ' +
+
+
+
+
+
+						toKhmer(femaleCount) +
+
+
+
+
+
+						")</span>"
+
+
+
+
+
+					);
+
+
+
+
+
+				}
+
+
+
+
+
+
+
+
+
+
+
+				var leaveEl = document.getElementById("att-stat-leave");
+
+
+
+
+
+				var noleaveEl = document.getElementById("att-stat-noleave");
+
+
+
+
+
+				var missionEl = document.getElementById("att-stat-mission");
+
+
+
+
+
+				var otherEl = document.getElementById("att-stat-other");
+
+
+
+
+
+				var absentEl = document.getElementById("att-stat-absent");
+
+
+
+
+
+
+
+
+
+
+
+				if (leaveEl) leaveEl.innerHTML = fmt(leaveCount, leaveFemaleCount, "text-orange-400");
+
+
+
+
+
+				if (noleaveEl) noleaveEl.innerHTML = fmt(noleaveCount, noleaveFemaleCount, "text-red-400");
+
+
+
+
+
+				if (missionEl) missionEl.innerHTML = fmt(missionCount, missionFemaleCount, "text-blue-400");
+
+
+
+
+
+				if (otherEl) otherEl.innerHTML = fmt(otherCount, otherFemaleCount, "text-slate-400");
+
+
+
+
+
+				if (absentEl)
+
+
+
+
+
+					absentEl.innerHTML = toKhmer(String(absentCount).padStart(2, "0"));
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function attLoadData(dateStr) {
+
+
+
+
+
+				if (!dateStr) return;
+
+
+
+
+
+				attConvertKhmerDate(dateStr);
+
+
+
+
+
+				db.ref("attendance/" + dateStr)
+
+
+
+
+
+					.get()
+
+
+
+
+
+					.then(function (snap) {
+
+
+
+
+
+						var val = snap.val() || {};
+
+
+
+
+
+						var tbody = document.getElementById("att-tbody");
+
+
+
+
+
+						if (!tbody) return;
+
+
+
+
+
+						tbody.querySelectorAll("tr").forEach(function (tr) {
+
+
+
+
+
+							var idx = tr.dataset.idx,
+
+
+
+
+
+								s = attStaff[idx];
+
+
+
+
+
+							if (!s) return;
+
+
+
+
+
+							var rec = val[s.name] || {};
+
+
+
+
+
+							var cs = tr.querySelectorAll(".att-sig-container");
+
+
+
+
+
+							attSetSigData(cs[0], rec.m_in);
+
+
+
+
+
+							attSetSigData(cs[1], rec.m_out);
+
+
+
+
+
+							attSetSigData(cs[2], rec.a_in);
+
+
+
+
+
+							attSetSigData(cs[3], rec.a_out);
+
+
+
+
+
+
+
+
+
+
+
+							if (
+
+
+
+
+
+								tr.dataset.idx === "0" &&
+
+
+
+
+
+								rec.m_in &&
+
+
+
+
+
+								rec.m_in.sig
+
+
+
+
+
+							) {
+
+
+
+
+
+								var ps =
+
+
+
+
+
+									document.getElementById(
+
+
+
+
+
+										"att-principal-sig"
+
+
+
+
+
+									);
+
+
+
+
+
+								var fs = document.getElementById(
+
+
+
+
+
+									"footer-principal-img"
+
+
+
+
+
+								);
+
+
+
+
+
+								if (ps) {
+
+
+
+
+
+									ps.src = rec.m_in.sig;
+
+
+
+
+
+									ps.classList.remove("hidden");
+
+
+
+
+
+									ps.style.display = "block";
+
+
+
+
+
+								}
+
+
+
+
+
+								if (fs) {
+
+
+
+
+
+									fs.src = rec.m_in.sig;
+
+
+
+
+
+									fs.style.display = "block";
+
+
+
+
+
+								}
+
+
+
+
+
+							}
+
+
+
+
+
+							var ni = tr.querySelector("input.att-note");
+
+
+
+
+
+							if (ni) {
+
+
+
+
+
+								ni.value = rec.note || "";
+
+
+
+
+
+								ni.addEventListener(
+
+
+
+
+
+									"input",
+
+
+
+
+
+									updateAttendanceStats
+
+
+
+
+
+								);
+
+
+
+
+
+							}
+
+
+
+
+
+						});
+
+
+
+
+
+						updateAttendanceStats();
+
+
+
+
+
+					});
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			// ══ CANVAS LOGIC ════════════════════════════════════════════
+
+
+
+
+
+			var attCurrentContainer = null,
+
+
+
+
+
+				attDrawing = false,
+
+
+
+
+
+				attCanvas,
+
+
+
+
+
+				attCtx;
+
+
+
+
+
+
+
+
+
+
+
+			function initCanvasEvents() {
+
+
+
+
+
+				var canvas = document.getElementById("att-sig-canvas");
+
+
+
+
+
+				if (!canvas) return;
+
+
+
+
+
+
+
+
+
+
+
+				canvas.onpointerdown = function (e) {
+
+
+
+
+
+					attDrawing = true;
+
+
+
+
+
+					attCtx = canvas.getContext("2d");
+
+
+
+
+
+					attCtx.lineWidth = 3.5;
+
+
+
+
+
+					attCtx.strokeStyle = "#1a3abf";
+
+
+
+
+
+					attCtx.lineCap = "round";
+
+
+
+
+
+					attCtx.beginPath();
+
+
+
+
+
+					var p = attGetCanvasPos(e);
+
+
+
+
+
+					attCtx.moveTo(p.x, p.y);
+
+
+
+
+
+					canvas.setPointerCapture(e.pointerId);
+
+
+
+
+
+				};
+
+
+
+
+
+
+
+
+
+
+
+				canvas.onpointermove = function (e) {
+
+
+
+
+
+					if (!attDrawing || !attCtx) return;
+
+
+
+
+
+					var p = attGetCanvasPos(e);
+
+
+
+
+
+					attCtx.lineTo(p.x, p.y);
+
+
+
+
+
+					attCtx.stroke();
+
+
+
+
+
+				};
+
+
+
+
+
+
+
+
+
+
+
+				canvas.onpointerup = function (e) {
+
+
+
+
+
+					attDrawing = false;
+
+
+
+
+
+					canvas.releasePointerCapture(e.pointerId);
+
+
+
+
+
+				};
+
+
+
+
+
+				canvas.onpointerleave = function () {
+
+
+
+
+
+					attDrawing = false;
+
+
+
+
+
+				};
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			var currentSelectedDate = new Date();
+
+
+
+
+
+
+
+
+
+
+
+			function checkNextButtonLimit() {
+
+
+
+
+
+				var nextBtn = document.getElementById("btn-next");
+
+
+
+
+
+				if (!nextBtn) return;
+
+
+
+
+
+				var today = new Date();
+
+
+
+
+
+				today.setHours(0, 0, 0, 0);
+
+
+
+
+
+
+
+
+
+
+
+				var checkDate = new Date(currentSelectedDate);
+
+
+
+
+
+				checkDate.setHours(0, 0, 0, 0);
+
+
+
+
+
+
+
+
+
+
+
+				if (checkDate >= today) {
+
+
+
+
+
+					nextBtn.disabled = true;
+
+
+
+
+
+					nextBtn.style.opacity = "0.4";
+
+
+
+
+
+					nextBtn.style.cursor = "not-allowed";
+
+
+
+
+
+				} else {
+
+
+
+
+
+					nextBtn.disabled = false;
+
+
+
+
+
+					nextBtn.style.opacity = "1";
+
+
+
+
+
+					nextBtn.style.cursor = "pointer";
+
+
+
+
+
+				}
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function changeDate(days) {
+
+
+
+
+
+				currentSelectedDate.setDate(
+
+
+
+
+
+					currentSelectedDate.getDate() + days
+
+
+
+
+
+				);
+
+
+
+
+
+				var di = document.getElementById("att-date-input");
+
+
+
+
+
+				if (di) {
+
+
+
+
+
+					di.valueAsDate = currentSelectedDate;
+
+
+
+
+
+					attLoadData(di.value);
+
+
+
+
+
+				}
+
+
+
+
+
+				checkNextButtonLimit();
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			// ══ RENDER UI ATTENDANCE ═════════════════════════════════════
+
+
+
+
+
+			function renderAttendance() {
+
+
+
+
+
+				document.getElementById("dashboard-content").innerHTML = `
+
+
+
+
+
+<div id="att-print-wrapper" style="background:#fff;color:#1e293b;padding:8px;border-radius:8px;font-family:'Noto Sans Khmer',sans-serif;">
+
+
+
+
+
+
+
+
+
+
+
+  <div class="print-header-center" style="text-align:center;font-size:13px;font-weight:700;line-height:1.6;margin-bottom:4px;color:#000;">
+
+
+
+
+
+    ព្រះរាជាណាក្រកម្ពុជា<br>ជាតិ សាសនា ព្រះមហាក្សត្រ<br>--------*--------
+
+
+
+
+
+  </div>
+
+
+
+
+
+  <div class="print-header-left" style="font-size:12px;font-weight:600;line-height:1.5;margin-bottom:4px;color:#000;">
+
+
+
+
+
+    រដ្ឋបាលស្រុកភ្នំស្រុក<br>ការិយាល័យអប់រំ យុវជន និងកីឡាស្រុក<br>សាលាបឋមសិក្សា រោគ
+
+
+
+
+
+  </div>
+
+
+
+
+
+  <h3 id="att-date-heading" style="text-align:center;font-size:20px;font-weight:800;color:#1d4ed8;margin:6px 0 2px 0;">
+
+
+
+
+
+    បញ្ជីវត្តមានបុគ្គលិក<br>
+
+
+
+
+
+    <span id="att-full-solar-title" style="font-size:16px;"></span>
+
+
+
+
+
+  </h3>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="no-print" style="margin:8px 0;">
+
+
+
+
+
+    <div id="gps-banner" style="display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:8px;font-size:12px;font-weight:700;margin-bottom:8px;background:#fefce8;color:#92400e;border:1px solid #fde68a;">
+
+
+
+
+
+      <span class="gps-dot loading"></span>
+
+
+
+
+
+      <span class="gps-text">⏳ កំពុងស្វែងរក GPS…</span>
+
+
+
+
+
+      <button id="retry-gps-btn" style="margin-left:auto;background:#2563eb;color:#fff;border:none;border-radius:4px;padding:2px 8px;font-size:10px;font-weight:700;cursor:pointer">🔄 Retry</button>
+
+
+
+
+
+    </div>
+
+
+
+
+
+     <div class="no-print" style="margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
+
+
+
+
+
+    <button id="save-firebase-btn" style="background:#1d4ed8;color:#fff;border:none;padding:8px 20px;border-radius:6px;font-weight:800;cursor:pointer;font-size:12px;">💾 → Firebase</button>
+
+
+
+
+
+    <button onclick="window.openMonthPrintModal()" style="background:#7c3aed;color:#fff;border:none;padding:8px 20px;border-radius:6px;font-weight:800;cursor:pointer;font-size:8px;">📅 ព្រីន ១ ខែ</button> <button onclick="window.print()" style="background:#16a34a;color:#fff;border:none;padding:8px 20px;border-radius:6px;font-weight:800;cursor:pointer;font-size:12px;">🖨️ ព្រីនទំព័រនេះ</button>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div style="text-align:center;font-size:12px;display:flex;align-items:center;justify-content:center;gap:10px;">
+
+
+
+
+
+      <button onclick="window.changeDate(-1)" class="bg-blue-600 text-white px-3 py-1 rounded font-bold hover:bg-blue-700">◀ </button>
+
+
+
+
+
+      
+
+
+
+
+
+      <span>ជ្រើសរើសថ្ងៃ៖
+
+
+
+
+
+        <input type="date" id="att-date-input" style="border:1px solid #2563eb;border-radius:4px;padding:2px 6px;font-size:12px;color:#000;background:#fff;">
+
+
+
+
+
+      </span>
+
+
+
+
+
+      
+
+
+
+
+
+      <button id="btn-next" onclick="window.changeDate(1)" class="bg-blue-600 text-white px-3 py-1 rounded font-bold hover:bg-blue-700">▶</button>
+
+
+
+
+
+
+
+
+
+
+
+      <span style="margin-left:12px;">ម៉ោង៖
+
+
+
+
+
+        <span id="att-clock" style="background:#fee2e2;color:#dc2626;padding:2px 8px;border-radius:4px;font-family:monospace;font-weight:700;">00:00:00</span>
+
+
+
+
+
+      </span>
+
+
+
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div style="overflow-x:auto;">
+
+
+
+
+
+    <table style="width:100%;border-collapse:collapse;font-size:12px;">
+
+
+
+
+
+      <colgroup>
+
+
+
+
+
+        <col style="width:4%"><col style="width:16%"><col style="width:6%"><col style="width:12%">
+
+
+
+
+
+        <col style="width:11%"><col style="width:11%"><col style="width:11%"><col style="width:11%">
+
+
+
+
+
+        <col style="width:11%"><col style="width:11%">
+
+
+
+
+
+      </colgroup>
+
+
+
+
+
+      <thead>
+
+
+
+
+
+        <tr>
+
+
+
+
+
+          <th rowspan="2" style="background:#1d4ed8;color:#fff;border:1px solid #1e3a8a;padding:5px;text-align:center;">ល.រ</th>
+
+
+
+
+
+          <th rowspan="2" style="background:#1d4ed8;color:#fff;border:1px solid #1e3a8a;padding:5px;text-align:center;">គោត្តនាម-នាម</th>
+
+
+
+
+
+          <th rowspan="2" style="background:#1d4ed8;color:#fff;border:1px solid #1e3a8a;padding:5px;text-align:center;">ភេទ</th>
+
+
+
+
+
+          <th rowspan="2" style="background:#1d4ed8;color:#fff;border:1px solid #1e3a8a;padding:5px;text-align:center;">តួនាទី/ថ្នាក់</th>
+
+
+
+
+
+          <th colspan="2" style="background:#1d4ed8;color:#fff;border:1px solid #1e3a8a;padding:5px;text-align:center;">ពេលព្រឹក</th>
+
+
+
+
+
+          <th colspan="2" style="background:#1d4ed8;color:#fff;border:1px solid #1e3a8a;padding:5px;text-align:center;">ពេលរសៀល</th>
+
+
+
+
+
+          <th rowspan="2" style="background:#1d4ed8;color:#fff;border:1px solid #1e3a8a;padding:5px;text-align:center;">លេខទូរស័ព្ទ</th>
+
+
+
+
+
+          <th rowspan="2" style="background:#1d4ed8;color:#fff;border:1px solid #1e3a8a;padding:5px;text-align:center;">ផ្សេងៗ</th>
+
+
+
+
+
+        </tr>
+
+
+
+
+
+        <tr>
+
+
+
+
+
+          <th style="background:#1d4ed8;color:#fff;border:1px solid #1e3a8a;padding:5px;text-align:center;">ចូល</th>
+
+
+
+
+
+          <th style="background:#1d4ed8;color:#fff;border:1px solid #1e3a8a;padding:5px;text-align:center;">ចេញ</th>
+
+
+
+
+
+          <th style="background:#1d4ed8;color:#fff;border:1px solid #1e3a8a;padding:5px;text-align:center;">ចូល</th>
+
+
+
+
+
+          <th style="background:#1d4ed8;color:#fff;border:1px solid #1e3a8a;padding:5px;text-align:center;">ចេញ</th>
+
+
+
+
+
+        </tr>
+
+
+
+
+
+      </thead>
+
+
+
+
+
+      <tbody id="att-tbody"></tbody>
+
+
+
+
+
+    </table>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="att-footer-grid" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:6px;padding-top:4px;border-top:1px solid #94a3b8;font-size:11px;color:#000;align-items:start;">
+
+
+
+
+
+    <div style="line-height:1.45;">
+
+
+
+
+
+      <p style="font-weight:700;color:#1d4ed8;font-size:12px;margin:0 0 2px 0;">📊 ស្ថិតិអវត្តមានតាមប្រភេទ៖</p>
+
+
+
+
+
+      <p style="margin:0;">- មានច្បាប់ (ច): <strong id="att-stat-leave">០០</strong></p>
+
+
+
+
+
+      <p style="margin:0;">- អត់ច្បាប់ (អ): <strong id="att-stat-noleave">០០</strong></p>
+
+
+
+
+
+      <p style="margin:0;">- បេសកកម្ម (ប): <strong id="att-stat-mission">០០</strong></p>
+
+
+
+
+
+      <p style="margin:0;">- ផ្សេងៗ (ផ): <strong id="att-stat-other">០០</strong></p>
+
+
+
+
+
+      <p style="margin:0;font-weight:700;">- សរុបអវត្តមាន: <strong id="att-stat-absent">០០</strong></p>
+
+
+        </div>
+
+
+
+
+
+    
+
+
+
+
+
+     <div style="line-height:1.7;color:#374151;">
+
+
+
+
+
+            <p style="font-weight:700;font-size:11px;margin:0 0 4px 0;">*ប្រភេទច្បាប់ឈប់សម្រាករួមមានៈ</p>
+
+
+
+
+
+            <p style="margin:0;">១- ច្បាប់ឈប់ប្រចាំឆ្នាំ មានរយៈពេល ១៥ ថ្ងៃ/ឆ្នាំ</p>
+
+
+
+
+
+            <p style="margin:0;">២- ច្បាប់ឈប់រយៈពេលខ្លី មានរយៈពេល ១៥ ថ្ងៃ/ឆ្នាំ</p>
+
+
+
+
+
+            <p style="margin:0;">៣- ច្បាប់ឈប់សម្រាកលំហែមាតុភាព មានរយៈពេល ៣ ខែ</p>
+
+
+
+
+
+            <p style="margin:0;">៤- ច្បាប់ឈប់ព្យាបាលជម្ងឺ មានរយៈពេល ១២ ខែ</p>
+
+
+
+
+
+            <p style="margin:0;">៥- ច្បាប់ឈប់កិច្ចការផ្ទាល់ខ្លួន មានរយៈពេល ៣ ខែ</p>
+
+
+
+
+
+        </div>
+
+
+
+
+
+    <div style="text-align:center;" id="att-principal-wrap">
+
+
+
+
+
+      <p id="att-lunardate" style="font-weight:700;font-size:11px;margin:0;color:#000;"></p>
+
+
+
+
+
+      <p id="att-solardate" style="font-weight:700;font-size:11px;margin:0;color:#000;"></p>
+
+
+
+
+
+      <p id="att-principal-label" style="font-weight:700;font-size:13px;color:#1e3a5f;margin:4px 0 2px 0;">នាយិកា</p>
+
+
+
+ <div style="height:45px;display:flex;align-items:center;justify-content:center;">
+
+
+
+
+
+        <img id="att-principal-sig" class="hidden" src="" style="max-height:40px;object-fit:contain;">
+
+
+
+     
+
+
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+ </div>`;
+
+
+
+
+
+
+
+
+
+
+
+				var di = document.getElementById("att-date-input");
+
+
+
+
+
+				di.valueAsDate = currentSelectedDate;
+
+
+
+
+
+				di.addEventListener("change", function () {
+
+
+
+
+
+					currentSelectedDate = new Date(this.value);
+
+
+
+
+
+					attLoadData(this.value);
+
+
+
+
+
+					checkNextButtonLimit();
+
+
+
+
+
+				});
+
+
+
+
+
+
+
+
+
+
+
+				document
+
+
+
+
+
+					.getElementById("retry-gps-btn")
+
+
+
+
+
+					.addEventListener("click", retryGPS);
+
+
+
+
+
+				document
+
+
+
+
+
+					.getElementById("save-firebase-btn")
+
+
+
+
+
+					.addEventListener("click", attSaveData);
+
+
+
+
+
+
+
+
+
+
+
+				stopAttClock();
+
+
+
+
+
+				attClockTick();
+
+
+
+
+
+				attClockInterval = setInterval(attClockTick, 1000);
+
+
+
+
+
+
+
+
+
+
+
+				var tbody = document.getElementById("att-tbody");
+
+
+
+
+
+				tbody.innerHTML = "";
+
+
+
+
+
+				attStaff.forEach(function (s, i) {
+
+
+
+
+
+					tbody.appendChild(attCreateRow(i, s));
+
+
+
+
+
+				});
+
+
+
+
+
+
+
+
+
+
+
+				attLoadData(di.value);
+
+
+
+
+
+				initCanvasEvents();
+
+
+
+
+
+				checkNextButtonLimit();
+
+
+
+
+
+
+
+
+
+
+
+				updateGPSBanner();
+
+
+
+
+
+				updateAllCellGPSState();
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			// ════════════════════════════════════════════════════════════
+
+
+
+
+
+			//  CLOCK
+
+
+
+
+
+			// ════════════════════════════════════════════════════════════
+
+
+
+
+
+			var attClockInterval = null;
+
+
+
+
+
+			function attClockTick() {
+
+
+
+
+
+				var el = document.getElementById("att-clock");
+
+
+
+
+
+				if (!el) {
+
+
+
+
+
+					stopAttClock();
+
+
+
+
+
+					return;
+
+
+
+
+
+				}
+
+
+
+
+
+				var n = new Date();
+
+
+
+
+
+				el.textContent =
+
+
+
+
+
+					String(n.getHours()).padStart(2, "0") +
+
+
+
+
+
+					":" +
+
+
+
+
+
+					String(n.getMinutes()).padStart(2, "0") +
+
+
+
+
+
+					":" +
+
+
+
+
+
+					String(n.getSeconds()).padStart(2, "0");
+
+
+
+
+
+			}
+
+
+
+
+
+			function stopAttClock() {
+
+
+
+
+
+				if (attClockInterval) {
+
+
+
+
+
+					clearInterval(attClockInterval);
+
+
+
+
+
+					attClockInterval = null;
+
+
+
+
+
+				}
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			// ════════════════════════════════════════════════════════════
+
+
+
+
+
+			//  SIGNATURE MODAL OPERATIONS
+
+
+
+
+
+			// ════════════════════════════════════════════════════════════
+
+
+
+
+
+			function attOpenSigModal(container, type, colIdx) {
+
+
+
+
+
+				if (container.dataset.sigData) return;
+
+
+
+
+
+
+
+
+
+
+
+				if (gpsState.status !== "ok") {
+
+
+
+
+
+					showGPSError();
+
+
+
+
+
+					return;
+
+
+
+
+
+				}
+
+
+
+
+
+
+
+
+
+
+
+				attCurrentContainer = container;
+
+
+
+
+
+				var ti = document.getElementById("att-modal-title");
+
+
+
+
+
+				if (ti) ti.textContent = "✍️ ចុះហត្ថលេខា — " + type;
+
+
+
+
+
+
+
+
+
+
+
+				attCanvas = document.getElementById("att-sig-canvas");
+
+
+
+
+
+				attCtx = attCanvas.getContext("2d");
+
+
+
+
+
+				attCtxClear();
+
+
+
+
+
+				updateModalGPSStatus();
+
+
+
+
+
+
+
+
+
+
+
+				document.getElementById("att-sig-modal").style.display = "flex";
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function attCloseModal() {
+
+
+
+
+
+				document.getElementById("att-sig-modal").style.display = "none";
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function attCtxClear() {
+
+
+
+
+
+				var canvas = document.getElementById("att-sig-canvas");
+
+
+
+
+
+				if (canvas) {
+
+
+
+
+
+					var ctx = canvas.getContext("2d");
+
+
+
+
+
+					ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+
+
+
+
+				}
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function attSaveSignature() {
+
+
+
+
+
+				if (gpsState.status !== "ok") {
+
+
+
+
+
+					showGPSError();
+
+
+
+
+
+					attCloseModal();
+
+
+
+
+
+					return;
+
+
+
+
+
+				}
+
+
+
+
+
+				var canvas = document.getElementById("att-sig-canvas");
+
+
+
+
+
+				if (!attCurrentContainer || !canvas) return;
+
+
+
+
+
+
+
+
+
+
+
+				var blank = document.createElement("canvas");
+
+
+
+
+
+				blank.width = canvas.width;
+
+
+
+
+
+				blank.height = canvas.height;
+
+
+
+
+
+				if (canvas.toDataURL() === blank.toDataURL()) {
+
+
+
+
+
+					alert("សូមគូសហត្ថលេខាជាមុនសិន!");
+
+
+
+
+
+					return;
+
+
+
+
+
+				}
+
+
+
+
+
+
+
+
+
+
+
+				var now = new Date();
+
+
+
+
+
+				var stampTime =
+
+
+
+
+
+					String(now.getHours()).padStart(2, "0") +
+
+
+
+
+
+					":" +
+
+
+
+
+
+					String(now.getMinutes()).padStart(2, "0") +
+
+
+
+
+
+					":" +
+
+
+
+
+
+					String(now.getSeconds()).padStart(2, "0");
+
+
+
+
+
+				var dataObj = {
+
+
+
+
+
+					time: stampTime,
+
+
+
+
+
+					sig: canvas.toDataURL(),
+
+
+
+
+
+					lat: gpsState.lat,
+
+
+
+
+
+					lng: gpsState.lng,
+
+
+
+
+
+					dist: gpsState.distance,
+
+
+
+
+
+				};
+
+
+
+
+
+
+
+
+
+
+
+				attSetSigData(attCurrentContainer, dataObj);
+
+
+
+
+
+
+
+
+
+
+
+				var row = attCurrentContainer.closest("tr");
+
+
+
+
+
+				if (row && row.dataset.idx === "0") {
+
+
+
+
+
+					var ps = document.getElementById("att-principal-sig");
+
+
+
+
+
+					var fs = document.getElementById("footer-principal-img");
+
+
+
+
+
+					if (ps) {
+
+
+
+
+
+						ps.src = dataObj.sig;
+
+
+
+
+
+						ps.classList.remove("hidden");
+
+
+
+
+
+						ps.style.display = "block";
+
+
+
+
+
+					}
+
+
+
+
+
+					if (fs) {
+
+
+
+
+
+						fs.src = dataObj.sig;
+
+
+
+
+
+						fs.style.display = "block";
+
+
+
+
+
+					}
+
+
+
+
+
+				}
+
+
+
+
+
+				updateAttendanceStats();
+
+
+
+
+
+				attCloseModal();
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function attGetCanvasPos(e) {
+
+
+
+
+
+				var canvasEl = document.getElementById("att-sig-canvas");
+
+
+
+
+
+				var rect = canvasEl.getBoundingClientRect();
+
+
+
+
+
+				var cx = e.touches ? e.touches[0].clientX : e.clientX;
+
+
+
+
+
+				var cy = e.touches ? e.touches[0].clientY : e.clientY;
+
+
+
+
+
+				return { x: cx - rect.left, y: cy - rect.top };
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function attSaveData() {
+
+
+
+
+
+				var dateEl = document.getElementById("att-date-input");
+
+
+
+
+
+				if (!dateEl || !dateEl.value) {
+
+
+
+
+
+					alert("សូមជ្រើសរើសកាលបរិច្ឆេទ!");
+
+
+
+
+
+					return;
+
+
+
+
+
+				}
+
+
+
+
+
+				var ds = dateEl.value,
+
+
+
+
+
+					data = {};
+
+
+
+
+
+				document
+
+
+
+
+
+					.getElementById("att-tbody")
+
+
+
+
+
+					.querySelectorAll("tr")
+
+
+
+
+
+					.forEach(function (tr) {
+
+
+
+
+
+						var s = attStaff[tr.dataset.idx];
+
+
+
+
+
+						if (!s) return;
+
+
+
+
+
+						var cs = tr.querySelectorAll(".att-sig-container");
+
+
+
+
+
+						data[s.name] = {
+
+
+
+
+
+							m_in:
+
+
+
+
+
+								cs[0] && cs[0].dataset.sigData
+
+
+
+
+
+									? JSON.parse(cs[0].dataset.sigData)
+
+
+
+
+
+									: "",
+
+
+
+
+
+							m_out:
+
+
+
+
+
+								cs[1] && cs[1].dataset.sigData
+
+
+
+
+
+									? JSON.parse(cs[1].dataset.sigData)
+
+
+
+
+
+									: "",
+
+
+
+
+
+							a_in:
+
+
+
+
+
+								cs[2] && cs[2].dataset.sigData
+
+
+
+
+
+									? JSON.parse(cs[2].dataset.sigData)
+
+
+
+
+
+									: "",
+
+
+
+
+
+							a_out:
+
+
+
+
+
+								cs[3] && cs[3].dataset.sigData
+
+
+
+
+
+									? JSON.parse(cs[3].dataset.sigData)
+
+
+
+
+
+									: "",
+
+
+
+
+
+							phone: s.phone,
+
+
+
+
+
+							note:
+
+
+
+
+
+								(tr.querySelector("input.att-note") || {})
+
+
+
+
+
+									.value || "",
+
+
+
+
+
+						};
+
+
+
+
+
+					});
+
+
+
+
+
+				db.ref("attendance/" + ds)
+
+
+
+
+
+					.set(data)
+
+
+
+
+
+					.then(function () {
+
+
+
+
+
+						alert("💾 បានរក្សាទុករួចរាល់!");
+
+
+
+
+
+						attLoadData(ds);
+
+
+
+
+
+					})
+
+
+
+
+
+					.catch(function (e) {
+
+
+
+
+
+						alert("❌ Error: " + e.message);
+
+
+
+
+
+					});
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function retryGPS() {
+
+
+
+
+
+				stopGPSWatch();
+
+
+
+
+
+				gpsState.status = "loading";
+
+
+
+
+
+				updateGPSBanner();
+
+
+
+
+
+				updateAllCellGPSState();
+
+
+
+
+
+				startGPSWatch();
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+// ════════════════════════════════════════════════════════════
+
+
+
+
+
+//  PRINT MONTHLY — ១ ថ្ងៃ = ១ ទំព័រ
+
+
+
+
+
+// ════════════════════════════════════════════════════════════
+
+
+
+
+
+
+
+
+
+
+
+window.openMonthPrintModal = function() {
+
+
+
+
+
+  var existing = document.getElementById('month-print-modal');
+
+
+
+
+
+  if (existing) { existing.style.display = 'flex'; return; }
+
+
+
+
+
+
+
+
+
+
+
+  var today = new Date();
+
+
+
+
+
+  var modal = document.createElement('div');
+
+
+
+
+
+  modal.id = 'month-print-modal';
+
+
+
+
+
+  modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:2000;display:flex;align-items:center;justify-content:center;';
+
+
+
+
+
+  modal.innerHTML = `
+
+
+
+
+
+    <div style="background:#1e293b;border:1px solid #334155;border-radius:12px;padding:24px;width:300px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.5)">
+
+
+
+
+
+      <h3 style="margin:0 0 16px 0;color:#f59e0b;font-size:14px;font-weight:800">🖨️ ព្រីនបញ្ជីវត្តមាន ១ ខែ</h3>
+
+
+
+
+
+      <div style="margin-bottom:12px;text-align:left;">
+
+
+
+
+
+        <label style="font-size:11px;color:#94a3b8;display:block;margin-bottom:4px">ជ្រើសខែ</label>
+
+
+
+
+
+        <select id="mp-month" style="width:100%;background:#0f172a;border:1px solid #475569;color:#fff;padding:8px;border-radius:6px;font-size:13px;">
+
+
+
+
+
+          ${[...Array(12)].map((_,i)=>`<option value="${i+1}" ${i===today.getMonth()?'selected':''}>${['មករា','កុម្ភៈ','មីនា','មេសា','ឧសភា','មិថុនា','កក្កដា','សីហា','កញ្ញា','តុលា','វិច្ឆិកា','ធ្នូ'][i]}</option>`).join('')}
+
+
+
+
+
+        </select>
+
+
+
+
+
+      </div>
+
+
+
+
+
+      <div style="margin-bottom:16px;text-align:left;">
+
+
+
+
+
+        <label style="font-size:11px;color:#94a3b8;display:block;margin-bottom:4px">ជ្រើសឆ្នាំ</label>
+
+
+
+
+
+        <select id="mp-year" style="width:100%;background:#0f172a;border:1px solid #475569;color:#fff;padding:8px;border-radius:6px;font-size:13px;">
+
+
+
+
+
+          ${[today.getFullYear()-1, today.getFullYear(), today.getFullYear()+1].map(y=>`<option value="${y}" ${y===today.getFullYear()?'selected':''}>${toKhmer(y)}</option>`).join('')}
+
+
+
+
+
+        </select>
+
+
+
+
+
+      </div>
+
+
+
+
+
+      <div id="mp-progress" style="font-size:11px;color:#fbbf24;min-height:18px;margin-bottom:10px;"></div>
+
+
+
+
+
+      <div style="display:flex;gap:8px;justify-content:center;">
+
+
+
+
+
+        <button onclick="doMonthPrint()" style="background:#1d4ed8;color:#fff;border:none;padding:8px 20px;border-radius:6px;font-weight:800;cursor:pointer;font-size:12px;">🖨️ ព្រីន</button>
+
+
+
+
+
+        <button onclick="document.getElementById('month-print-modal').style.display='none'" style="background:#475569;color:#fff;border:none;padding:8px 16px;border-radius:6px;font-weight:800;cursor:pointer;font-size:12px;">✕ បោះបង់</button>
+
+
+
+
+
+      </div>
+
+
+
+
+
+    </div>`;
+
+
+
+
+
+  document.body.appendChild(modal);
+
+
+
+
+
+};
+
+
+
+
+
+
+
+
+
+
+
+window.doMonthPrint = async function() {
+
+
+
+
+
+  var month = parseInt(document.getElementById('mp-month').value);
+
+
+
+
+
+  var year  = parseInt(document.getElementById('mp-year').value);
+
+
+
+
+
+  var prog  = document.getElementById('mp-progress');
+
+
+
+
+
+  
+
+
+
+
+
+  var daysInMonth = new Date(year, month, 0).getDate();
+
+
+
+
+
+  
+
+
+
+
+
+  prog.textContent = '⏳ កំពុង Load ទិន្នន័យ…';
+
+
+
+
+
+  document.getElementById('month-print-modal').style.pointerEvents = 'none';
+
+
+
+
+
+
+
+
+
+
+
+  var allData = {};
+
+
+
+
+
+  var loadPromises = [];
+
+
+
+
+
+  for (var d = 1; d <= daysInMonth; d++) {
+
+
+
+
+
+    var mm = String(month).padStart(2,'0');
+
+
+
+
+
+    var dd = String(d).padStart(2,'0');
+
+
+
+
+
+    var dateStr = year + '-' + mm + '-' + dd;
+
+
+
+
+
+    loadPromises.push(
+
+
+
+
+
+      (function(ds){ 
+
+
+
+
+
+        return db.ref('attendance/' + ds).get().then(function(snap){ 
+
+
+
+
+
+          allData[ds] = snap.val() || {}; 
+
+
+
+
+
+        }); 
+
+
+
+
+
+      })(dateStr)
+
+
+
+
+
+    );
+
+
+
+
+
+  }
+
+
+
+
+
+  
+
+
+
+
+
+  try {
+
+
+
+
+
+    await Promise.all(loadPromises);
+
+
+
+
+
+    prog.textContent = '✅ Load រួចរាល់! កំពុងបង្កើតទំព័រ…';
+
+
+
+
+
+  } catch(e) {
+
+
+
+
+
+    prog.textContent = '⚠️ Error: ' + e.message;
+
+
+
+
+
+    document.getElementById('month-print-modal').style.pointerEvents = '';
+
+
+
+
+
+    return;
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  var container = document.createElement('div');
+
+
+
+
+
+  container.id = 'monthly-print-container';
+
+
+
+
+
+  container.style.cssText = 'position:fixed;left:-9999px;top:0;width:297mm;';
+
+
+
+
+
+
+
+
+
+
+
+  var monthNames = ['មករា','កុម្ភៈ','មីនា','មេសា','ឧសភា','មិថុនា','កក្កដា','សីហា','កញ្ញា','តុលា','វិច្ឆិកា','ធ្នូ'];
+
+
+
+
+
+  
+
+
+
+
+
+  for (var d = 1; d <= daysInMonth; d++) {
+
+
+
+
+
+    var mm2 = String(month).padStart(2,'0');
+
+
+
+
+
+    var dd2 = String(d).padStart(2,'0');
+
+
+
+
+
+    var dateStr2 = year + '-' + mm2 + '-' + dd2;
+
+
+
+
+
+    var dayData  = allData[dateStr2] || {};
+
+
+
+
+
+    var dateObj  = new Date(dateStr2);
+
+
+
+
+
+    var dayNames = ["អាទិត្យ","ច័ន្ទ","អង្គារ","ពុធ","ព្រហស្បតិ៍","សុក្រ","សៅរ៍"];
+
+
+
+
+
+    var dayName  = dayNames[dateObj.getDay()];
+
+
+
+
+
+    var lunarDateStr2 = khmerLunarDateStr(dateObj);
+
+
+
+
+
+    
+
+
+
+
+
+    var rowsHTML = attStaff.map(function(s, i) {
+
+
+
+
+
+      var rec = dayData[s.name] || {};
+
+
+
+
+
+      function sigCell(recField) {
+
+
+
+
+
+        if (recField && recField.sig) {
+
+
+
+
+
+          return '<td style="text-align:center;border:1pt solid #000;padding:2pt;min-width:80pt;">' +
+
+
+
+
+
+            '<img src="' + recField.sig + '" style="max-height:28pt;max-width:70pt;object-fit:contain;display:block;margin:0 auto;">' +
+
+
+
+
+
+            '<span style="font-size:8pt;display:block;text-align:center;">' + (recField.time||'') + '</span>' +
+
+
+
+
+
+            '</td>';
+
+
+
+
+
+        }
+
+
+
+
+
+        return '<td style="border:1pt solid #000;padding:2pt;min-width:80pt;"> </td>';
+
+
+
+
+
+      }
+
+
+
+
+
+      var bg = i % 2 === 1 ? 'background:#f5f7fa;' : 'background:#fff;';
+
+
+
+
+
+      return '<tr style="' + bg + '">' +
+
+
+
+
+
+        '<td style="text-align:center;border:1pt solid #000;padding:3pt;font-size:11pt;">' + toKhmer(i+1) + '</td>' +
+
+
+
+
+
+        '<td style="border:1pt solid #000;padding:3pt;font-size:12pt;font-weight:800;white-space:nowrap;">' + s.name + '</td>' +
+
+
+
+
+
+        '<td style="text-align:center;border:1pt solid #000;padding:3pt;font-size:11pt;">' + s.gender + '</td>' +
+
+
+
+
+
+        '<td style="border:1pt solid #000;padding:3pt;font-size:11pt;white-space:nowrap;">' + s.position + (s.cls!=='-'?' '+s.cls:'') + '</td>' +
+
+
+
+
+
+        sigCell(rec.m_in) + sigCell(rec.m_out) + sigCell(rec.a_in) + sigCell(rec.a_out) +
+
+
+
+
+
+        '<td style="border:1pt solid #000;padding:3pt;font-size:10pt;">' + (rec.note||'') + '</td>' +
+
+
+
+
+
+      '</tr>';
+
+
+
+
+
+    }).join('');
+
+
+
+
+
+
+
+
+
+
+
+    var page = document.createElement('div');
+
+
+
+
+
+    page.className = 'monthly-print-page';
+
+
+
+
+
+    page.innerHTML = `
+
+
+
+
+
+      <div style="text-align:center;font-size:13pt;font-weight:700;line-height:1.5;margin-bottom:3pt;">
+
+
+
+
+
+        ព្រះរាជាណាក្រកម្ពុជា<br>ជាតិ សាសនា ព្រះមហាក្សត្រ<br>--------*--------
+
+
+
+
+
+      </div>
+
+
+
+
+
+      <div style="text-align: left;font-size:11pt;font-weight:600;line-height:1.4;margin-bottom:3pt;">
+
+
+
+
+
+        រដ្ឋបាលស្រុកភ្នំស្រុក<br>ការិយាល័យអប់រំ យុវជន និងកីឡាស្រុក<br>សាលាបឋមសិក្សា រោគ
+
+
+
+
+
+      </div>
+
+
+
+
+
+      <h3 style="text-align:center;font-size:17pt;font-weight:800;color:#000;margin:4pt 0 2pt 0;">
+
+
+
+
+
+        បញ្ជីវត្តមានបុគ្គលិក<br>
+
+
+
+
+
+        <span style="font-size:13pt;">ថ្ងៃ${dayName} ទី${toKhmer(d)} ខែ${monthNames[month-1]} ឆ្នាំ${toKhmer(year)}</span>
+
+
+
+
+
+      </h3>
+
+
+
+
+
+      <table style="width:100%;border-collapse:collapse;font-size:11pt;table-layout:fixed;">
+
+
+
+
+
+        <colgroup>
+
+
+
+
+
+          <col style="width:4%"><col style="width:18%"><col style="width:5%"><col style="width:13%">
+
+
+
+
+
+          <col style="width:12%"><col style="width:12%"><col style="width:12%"><col style="width:12%">
+
+
+
+
+
+          <col style="width:12%">
+
+
+
+
+
+        </colgroup>
+
+
+
+
+
+        <thead>
+
+
+
+
+
+          <tr>
+
+
+
+
+
+            <th rowspan="2" style="background:#1d4ed8;color:#fff;border:1pt solid #000;padding:4pt;text-align:center;font-size:11pt;">ល.រ</th>
+
+
+
+
+
+            <th rowspan="2" style="background:#1d4ed8;color:#fff;border:1pt solid #000;padding:4pt;text-align:center;">គោត្តនាម-នាម</th>
+
+
+
+
+
+            <th rowspan="2" style="background:#1d4ed8;color:#fff;border:1pt solid #000;padding:4pt;text-align:center;">ភេទ</th>
+
+
+
+
+
+            <th rowspan="2" style="background:#1d4ed8;color:#fff;border:1pt solid #000;padding:4pt;text-align:center;">តួនាទី</th>
+
+
+
+
+
+            <th colspan="2" style="background:#1d4ed8;color:#fff;border:1pt solid #000;padding:4pt;text-align:center;">ពេលព្រឹក</th>
+
+
+
+
+
+            <th colspan="2" style="background:#1d4ed8;color:#fff;border:1pt solid #000;padding:4pt;text-align:center;">ពេលរសៀល</th>
+
+
+
+
+
+            <th rowspan="2" style="background:#1d4ed8;color:#fff;border:1pt solid #000;padding:4pt;text-align:center;">ផ្សេងៗ</th>
+
+
+
+
+
+          </tr>
+
+
+
+
+
+          <tr>
+
+
+
+
+
+            <th style="background:#1d4ed8;color:#fff;border:1pt solid #000;padding:4pt;text-align:center;">ចូល</th>
+
+
+
+
+
+            <th style="background:#1d4ed8;color:#fff;border:1pt solid #000;padding:4pt;text-align:center;">ចេញ</th>
+
+
+
+
+
+            <th style="background:#1d4ed8;color:#fff;border:1pt solid #000;padding:4pt;text-align:center;">ចូល</th>
+
+
+
+
+
+            <th style="background:#1d4ed8;color:#fff;border:1pt solid #000;padding:4pt;text-align:center;">ចេញ</th>
+
+
+
+
+
+          </tr>
+
+
+
+
+
+        </thead>
+
+
+
+
+
+        <tbody>${rowsHTML}</tbody>
+
+
+
+
+
+      </table>
+
+
+
+
+
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4pt;margin-top:8pt;padding-top:4pt;border-top:1pt solid #000;font-size:10pt;">
+
+
+
+
+
+        <div style="font-size:9pt;line-height:1.5;">${lunarDateStr2}</div>
+
+
+
+
+
+        <div></div>
+
+
+
+
+
+        <div style="text-align:left;">
+
+
+
+
+
+          <p style="font-weight:700;font-size:11pt;margin:0;">រោគ ថ្ងៃ${dayName} ទី${toKhmer(d)} ខែ${monthNames[month-1]} ឆ្នាំ${toKhmer(year)}</p>
+
+
+
+
+
+          <p style="text-align:center; font-weight:700;font-size:12pt;color:#1e3a5f;margin:4pt 0 2pt 0;">នាយិកា</p>
+
+
+
+
+
+          <div style="height:45pt;">${dayData['សុខ សារើន'] && dayData['សុខ សារើន'].m_in && dayData['សុខ សារើន'].m_in.sig ? '<img src="'+dayData['សុខ សារើន'].m_in.sig+'" style="max-height:40pt;object-fit:contain;display:block;margin:0 auto;">' : ''}</div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+      </div>`;
+
+
+
+
+
+    container.appendChild(page);
+
+
+
+
+
+  }
+
+
+
+
+
+  
+
+
+
+
+
+  document.body.appendChild(container);
+
+
+
+
+
+
+
+
+
+
+
+  var styleId = 'monthly-print-style';
+
+
+
+
+
+  var oldStyle = document.getElementById(styleId);
+
+
+
+
+
+  if (oldStyle) oldStyle.remove();
+
+
+
+
+
+  var style = document.createElement('style');
+
+
+
+
+
+  style.id = styleId;
+
+
+
+
+
+  style.textContent = `
+
+
+
+
+
+    @media print {
+
+
+
+
+
+      body > *:not(#monthly-print-container) { display: none !important; }
+
+
+
+
+
+      #monthly-print-container { 
+
+
+
+
+
+        display: block !important; 
+
+
+
+
+
+        position: static !important;
+
+
+
+
+
+        left: auto !important;
+
+
+
+
+
+        width: auto !important;
+
+
+
+
+
+      }
+
+
+
+
+
+      .monthly-print-page {
+
+
+
+
+
+        page-break-after: always;
+
+
+
+
+
+        padding: 6mm;
+
+
+
+
+
+        font-family: 'Noto Sans Khmer', sans-serif;
+
+
+
+
+
+        background: #fff;
+
+
+
+
+
+        -webkit-print-color-adjust: exact;
+
+
+
+
+
+        print-color-adjust: exact;
+
+
+
+
+
+      }
+
+
+
+
+
+      .monthly-print-page:last-child { page-break-after: avoid; }
+
+
+
+
+
+      @page { size: A4 landscape; margin: 4mm; }
+
+
+
+
+
+      table thead th { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+
+
+
+
+      tr:nth-child(even) td { background: #f5f7fa !important; -webkit-print-color-adjust: exact !important; }
+
+
+
+
+
+    }`;
+
+
+
+
+
+  document.head.appendChild(style);
+
+
+
+
+
+
+
+
+
+
+
+  document.getElementById('month-print-modal').style.display = 'none';
+
+
+
+
+
+  
+
+
+
+
+
+  setTimeout(function() {
+
+
+
+
+
+    window.print();
+
+
+
+
+
+    setTimeout(function() {
+
+
+
+
+
+      container.remove();
+
+
+
+
+
+      style.remove();
+
+
+
+
+
+    }, 2000);
+
+
+
+
+
+  }, 300);
+
+
+
+
+
+};
+
+
+
+
+
+
+
+
+
+
+
+			// ════════════════════════════════════════════════════════════
+
+
+
+
+
+			//  🆕 NEW FIREBASE SMS AUTHENTICATION SYSTEM
+
+
+
+
+
+			// ════════════════════════════════════════════════════════════
+
+
+
+
+
+			var currentUser = null,
+
+
+
+
+
+				activeTabId = "attendance";
+
+
+
+
+
+
+
+
+
+
+
+			// បង្កើត Recaptcha ស្វ័យប្រវត្តសម្រាប់ផ្ទៀងផ្ទាត់ទូរសព្ទ
+
+
+
+
+
+			function initFirebasePhoneAuth() {
+
+
+
+
+
+				window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
+
+
+
+
+
+					'size': 'invisible',
+
+
+
+
+
+					'callback': function(response) {
+
+
+
+
+
+						// reCAPTCHA solved
+
+
+
+
+
+					}
+
+
+
+
+
+				});
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			// មុខងារចុចសុំលេខ OTP
+
+
+
+
+
+			window.onRequestOTP = function() {
+
+
+
+
+
+				var phoneInput = document.getElementById("auth-phone-number").value.trim();
+
+
+
+
+
+				if (!phoneInput || phoneInput.length < 9) {
+
+
+
+
+
+					showError("សូមបញ្ចូលលេខទូរសព្ទឱ្យបានត្រឹមត្រូវ (ឧទាហរណ៍៖ +855976868898)!");
+
+
+
+
+
+					return;
+
+
+
+
+
+				}
+
+
+
+
+
+
+
+
+
+
+
+				// ពិនិត្យមើលជាមុនសិនថាតើលេខនេះមានក្នុងបញ្ជីគ្រូអត់
+
+
+
+
+
+				var staffFound = attStaff.find(function(s) { return s.phone === phoneInput; });
+
+
+
+
+
+				if (!staffFound) {
+
+
+
+
+
+					showError("លេខទូរសព្ទនេះមិនទាន់បានចុះឈ្មោះក្នុងប្រព័ន្ធសាលាទេ! សូមទាក់ទង admin");
+
+
+
+
+
+					return;
+
+
+
+
+
+				}
+
+
+
+
+
+
+
+
+
+
+
+				document.getElementById("loading-overlay").style.display = "flex";
+
+
+
+
+
+
+
+
+
+
+
+				auth.signInWithPhoneNumber(phoneInput, window.recaptchaVerifier)
+
+
+
+
+
+					.then(function(confirmationResult) {
+
+
+
+
+
+						window.confirmationResult = confirmationResult;
+
+
+
+
+
+						document.getElementById("loading-overlay").style.display = "none";
+
+
+
+
+
+						document.getElementById("otp-auth-section").classList.remove("hidden"); // បង្ហាញប្រអប់វាយ OTP
+
+
+
+
+
+						alert("📨 លេខកូដ OTP ត្រូវបានផ្ញើទៅកាន់លេខ " + phoneInput + " រួចហើយ!");
+
+
+
+
+
+					})
+
+
+
+
+
+					.catch(function(error) {
+
+
+
+
+
+						document.getElementById("loading-overlay").style.display = "none";
+
+
+
+
+
+						showError("Error ផ្ញើ SMS: " + error.message);
+
+
+
+
+
+						// ប្រសិនបើ Recaptcha Error ត្រូវ Reset ឡើងវិញ
+
+
+
+
+
+						window.recaptchaVerifier.render().then(function(widgetId) {
+
+
+
+
+
+							grecaptcha.reset(widgetId);
+
+
+
+
+
+						});
+
+
+
+
+
+					});
+
+
+
+
+
+			};
+
+
+
+
+
+
+
+
+
+
+
+			// មុខងារផ្ទៀងផ្ទាត់ OTP ដើម្បីចូល Dashboard
+
+
+
+
+
+			window.onVerifyOTP = function() {
+
+
+
+
+
+				var code = document.getElementById("auth-otp-code").value.trim();
+
+
+
+
+
+				var phoneInput = document.getElementById("auth-phone-number").value.trim();
+
+
+
+
+
+
+
+
+
+
+
+				if (code.length !== 6) {
+
+
+
+
+
+					showError("សូមបញ្ចូលលេខកូដ OTP ឱ្យគ្រប់ ៦ខ្ទង់!");
+
+
+
+
+
+					return;
+
+
+
+
+
+				}
+
+
+
+
+
+
+
+
+
+
+
+				document.getElementById("loading-overlay").style.display = "flex";
+
+
+
+
+
+
+
+
+
+
+
+				window.confirmationResult.confirm(code)
+
+
+
+
+
+					.then(function(result) {
+
+
+
+
+
+						// ផ្ទៀងផ្ទាត់លេខកូដត្រូវ ចាប់ផ្តើមស្វែងរក Role និង ឈ្មោះបុគ្គលិក
+
+
+
+
+
+						var staff = attStaff.find(function(s) { return s.phone === phoneInput; });
+
+
+
+
+
+						
+
+
+
+
+
+						currentUser = {
+
+
+
+
+
+							phone: phoneInput,
+
+
+
+
+
+							name: staff.name,
+
+
+
+
+
+							role: staff.role
+
+
+
+
+
+						};
+
+
+
+
+
+
+
+
+
+
+
+						document.getElementById("loading-overlay").style.display = "none";
+
+
+
+
+
+						showDashboard();
+
+
+
+
+
+					})
+
+
+
+
+
+					.catch(function(error) {
+
+
+
+
+
+						document.getElementById("loading-overlay").style.display = "none";
+
+
+
+
+
+						showError("លេខកូដ OTP មិនត្រឹមត្រូវ ឬអស់សុពលភាព! សូមពិនិត្យម្តងទៀត។");
+
+
+
+
+
+					});
+
+
+
+
+
+			};
+
+
+
+
+
+
+
+
+
+
+
+			function showError(msg) {
+
+
+
+
+
+				var el = document.getElementById("error-message");
+
+
+
+
+
+				el.textContent = msg;
+
+
+
+
+
+				el.classList.remove("hidden");
+
+
+
+
+
+				setTimeout(function () {
+
+
+
+
+
+					el.classList.add("hidden");
+
+
+
+
+
+				}, 4000);
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+			function showDashboard() {
+
+
+
+
+
+				document.getElementById("login-page").classList.add("hidden");
+
+
+
+
+
+				document
+
+
+
+
+
+					.getElementById("dashboard-page")
+
+
+
+
+
+					.classList.remove("hidden");
+
+
+
+
+
+				document.getElementById("user-name").textContent =
+
+
+
+
+
+					currentUser.name;
+
+
+
+
+
+
+
+
+
+
+
+				var fln = document.getElementById("footer-login-name");
+
+
+
+
+
+				if (fln) fln.textContent = currentUser.name;
+
+
+
+
+
+
+
+
+
+
+
+				var rt = document.getElementById("user-role-tag");
+
+
+
+
+
+				switch (currentUser.role) {
+
+
+
+
+
+					case "admin":
+
+
+
+
+
+						rt.textContent = "admin";
+
+
+
+
+
+						rt.className = "tag";
+
+
+
+
+
+						break;
+
+
+
+
+
+					case "director":
+
+
+
+
+
+						rt.textContent = "នាយិកា";
+
+
+
+
+
+						rt.className = "tag tag-green";
+
+
+
+
+
+						break;
+
+
+
+
+
+					case "teacher":
+
+
+
+
+
+						rt.textContent = "គ្រូបង្រៀន";
+
+
+
+
+
+						rt.className = "tag tag-orange";
+
+
+
+
+
+						break;
+
+
+
+
+
+				}
+
+
+
+
+
+				setActiveTab("attendance");
+
+
+
+
+
+				startGPSWatch();
+
+
+
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+		function renderIframeTab(templateId) {
+
+
+
+
+
+    var cont = document.getElementById('dashboard-content');
+
+
+
+
+
+    if (!cont) return;
+
+
+
+
+
+    var tpl = document.getElementById(templateId);
+
+
+
+
+
+    var html = tpl ? tpl.innerHTML
+
+
+
+
+
+        : '<p style="color:#fff;padding:20px;">Template #' + templateId + ' រកមិនឃើញ</p>';
+
+
+
+
+
+    cont.innerHTML =
+
+
+
+
+
+        '<iframe style="width:100%;height:calc(100vh - 90px);border:none;border-radius:8px;background:#fff;" ' +
+
+
+
+
+
+        'sandbox="allow-scripts allow-same-origin allow-forms allow-modals"></iframe>';
+
+
+
+
+
+    var iframe = cont.querySelector('iframe');
+
+
+
+
+
+    var blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+
+
+
+
+
+    var url = URL.createObjectURL(blob);
+
+
+
+
+
+    iframe.src = url;
+
+
+
+
+
+    iframe.onload = function() { URL.revokeObjectURL(url); };
+
+
+
+
+
+}
+
+
+
+
+
+window.renderEfms   = function() { renderIframeTab('tpl-efms');   };
+
+
+
+
+
+window.renderAppfinall   = function() { renderIframeTab('tpl-appfinall');   };
+
+
+
+
+
+window.renderStandard = function() { renderIframeTab('tpl-standard'); };
+
+
+
+
+
+window.renderLibrary  = function() { renderIframeTab('tpl-library');  };
+
+
+
+
+
+window.renderReport   = function() { renderIframeTab('tpl-report');   };
+
+
+
+
+
+window.renderDataclass = function() { renderIframeTab('tpl-dataclass');   };
+
+
+
+
+
+window.renderPayment   = function() { renderIframeTab('tpl-payment');   };
+
+
+
+
+
+
+
+
+
+
+
+function setActiveTab(tabId) {
+
+
+
+
+
+    if (tabId !== 'attendance') stopAttClock();
+
+
+
+
+
+    activeTabId = tabId;
+
+
+
+
+
+
+
+
+
+
+
+    ['attendance','appfinall','efms','standard','library','report','dataclass','payment'].forEach(function(id) {
+
+
+
+
+
+        var el = document.getElementById('tab-' + id);
+
+
+
+
+
+        if (!el) return;
+
+
+
+
+
+        el.style.borderBottom = id === tabId ? '2px solid #f59e0b' : '2px solid transparent';
+
+
+
+
+
+        el.style.color = id === tabId ? '#f59e0b' : '#94a3b8';
+
+
+
+
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+    if      (tabId === 'attendance') renderAttendance();
+
+
+
+
+
+    else if (tabId === 'appfinall')     window.renderAppfinall();
+
+
+
+
+
+    else if (tabId === 'efms')     window.renderEfms();
+
+
+
+
+
+    else if (tabId === 'standard')   window.renderStandard();
+
+
+
+
+
+    else if (tabId === 'library')    window.renderLibrary();
+
+
+
+
+
+    else if (tabId === 'report')     window.renderReport();
+
+
+
+
+
+    else if (tabId === 'dataclass')  window.renderDataclass();
+
+
+
+
+
+    else if (tabId === 'payment')  window.renderPayment();
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+			function loadFromFirebase() {
+
+
+
+
+
+				db.ref("teacherData").on(
+
+
+
+
+
+					"value",
+
+
+
+
+
+					function () {
+
+
+
+
+
+						document.getElementById("fb-dot").className =
+
+
+
+
+
+							"fb-dot fb-live";
+
+
+
+
+
+						document.getElementById("fb-label").textContent =
+
+
+
+
+
+							"Live";
+
+
+
+
+
+						document.getElementById(
+
+
+
+
+
+							"loading-overlay"
+
+
+
+
+
+						).style.display = "none";
+
+
+
+
+
+						document
+
+
+
+
+
+							.getElementById("login-page")
+
+
+
+
+
+							.classList.remove("hidden");
+
+
+
+
+
+						
+
+
+
+
+
+						initFirebasePhoneAuth(); // រៀបចំប្រព័ន្ធផ្ញើ SMS នៅពេល Firebase ភ្ជាប់ជោគជ័យ
+
+
+
+
+
+					},
+
+
+
+
+
+					function () {
+
+
+
+
+
+						document.getElementById(
+
+
+
+
+
+							"loading-overlay"
+
+
+
+
+
+						).style.display = "none";
+
+
+
+
+
+						document
+
+
+
+
+
+							.getElementById("login-page")
+
+
+
+
+
+							.classList.remove("hidden");
+
+
+
+
+
+						document.getElementById("fb-dot").className =
+
+
+
+
+
+							"fb-dot fb-off";
+
+
+
+
+
+						document.getElementById("fb-label").textContent =
+
+
+
+
+
+							"Offline";
+
+
+
+
+
+						
+
+
+
+
+
+						initFirebasePhoneAuth();
+
+
+
+
+
+					}
+
+
+
+
+
+				);
+
+
+
+
+
+			}
+
+
+
+
+
+			loadFromFirebase();
+
+
+
+
+
+
+
+
+
+
+
+			// ════════════════════════════════════════════════════════════
+
+
+
+
+
+			//  ROOT EVENT LISTENERS
+
+
+
+
+
+			// ════════════════════════════════════════════════════════════
+
+
+
+
+
+			document
+
+
+
+
+
+				.getElementById("logout-btn")
+
+
+
+
+
+				.addEventListener("click", function () {
+
+
+
+
+
+					stopAttClock();
+
+
+
+
+
+					stopGPSWatch();
+
+
+
+
+
+					currentUser = null;
+
+
+
+
+
+					document.getElementById("auth-phone-number").value = "+855";
+
+
+
+
+
+					document.getElementById("auth-otp-code").value = "";
+
+
+
+
+
+					document.getElementById("otp-auth-section").classList.add("hidden");
+
+
+
+
+
+					document.getElementById("login-page").classList.remove("hidden");
+
+
+
+
+
+					document.getElementById("dashboard-page").classList.add("hidden");
+
+
+
+
+
+				});
+
+
+
+
+
+
+
+
+
+
+
+			document.getElementById("send-otp-btn").addEventListener("click", window.onRequestOTP);
+
+
+
+
+
+			document.getElementById("verify-otp-btn").addEventListener("click", window.onVerifyOTP);
+
+
+
+
+
+
+
+
+
+
+
+			// ════════════════════════════════════════════════════════════
+
+
+
+
+
+			//  EXPOSE FUNCTIONS TO GLOBAL SCOPE
+
+
+
+
+
+			// ════════════════════════════════════════════════════════════
+
+
+
+
+
+			window.setActiveTab = setActiveTab;
+
+
+
+
+
+			window.attOpenSigModal = attOpenSigModal;
+
+
+
+
+
+			window.attCtxClear = attCtxClear;
+
+
+
+
+
+			window.attSaveSignature = attSaveSignature;
+
+
+
+
+
+			window.attCloseModal = attCloseModal;
+
+
+
+
+
+			window.attSaveData = attSaveData;
+
+
+
+
+
+			window.retryGPS = retryGPS;
+
+
+
+
+
+			window.changeDate = changeDate;</script><script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;e3c1c9af36de41759418005494a48906&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;e3c1c9af36de41759418005494a48906&quot;,&quot;r&quot;:1}" crossorigin="anonymous"></script><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" tabindex="-1" vspace="0" width="100%" aria-hidden="true" id="I0_1786556512958" name="I0_1786556512958" src="https://packagedemo-b600c.firebaseapp.com/__/auth/iframe?apiKey=AIzaSyB35WLr1y5_QT3j-0x7Mb2F7QaaYXLdIcQ&amp;appName=%5BDEFAULT%5D&amp;v=10.0.0&amp;eid=p&amp;usegapi=1&amp;jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.9vdPKhB0RUg.O%2Fd%3D1%2Frs%3DAHpOoo97anj7zZ432JcN58tqJJp_A6WeOw%2Fm%3D__features__#id=I0_1786556512958&amp;_gfid=I0_1786556512958&amp;parent=https%3A%2F%2Fsms-appattendance.oneapp.dev&amp;pfname=&amp;rpctoken=21607412" style="position:absolute;top:-100px;width:1px;height:1px"></iframe></body></html>
